@@ -12,33 +12,33 @@
 
 <body>
     <div class="container">
-        <div class="column">
+        <div class="column left-column">
             <h1>Curriculum Vitae Infirmier Jean MOREL</h1>
-            <a href="cv_infirmier_jean_morel_erd_au_chor.pdf" target="_blank" class="images/cv_infirmier_jean_morel_erd_au_chor.pdf">Télécharger mon CV (PDF)</a>
-            <a>
-                <img src="images/Photo2_CVwebp.webp" alt="Photo de Jean MOREL" class="profile-pic">
-            </a>
+            <a href="https://1drv.ms/b/s!Aiwuj4JMCHPG7mcfkqWlBscy6nyO?e=hWAqrk" target="_blank" class="cv-link">Télécharger mon CV (PDF)</a>
+            <div class="info-section">
+                <a target="_blank" href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense/">
+                    <div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="jean-morel-infirmier-reconversion-emploi-reserve-defense" data-version="v1">
+                    </div>
+                </a>
+                <div id="qrcode"></div>
+            </div>
             <p>Infirmier dans le <span class="important">Service de Santé des Armées</span> depuis <span class="important">24 ans</span>, j’ai pu servir comme Infirmier dans différents corps d’armées tels que :</p>
             <ul>
                 <li>La <span class="important">Marine Nationale</span>,</li>
                 <li>L’<span class="important">Armée de Terre</span>,</li>
                 <li>Les <span class="important">Sapeurs Pompiers Volontaires</span> protocolé par le <span class="important">SAMU</span>,</li>
                 <li>La <span class="important">Gendarmerie</span>,</li>
-                <li>L’<span class="important">Armée de l’Air et de l'Espace</span>,</li>
+                <li>L’<span class="important">Armée de l'Air et de l'Espace</span>,</li>
                 <li>En unité embarquée comme à terre,</li>
                 <li>En unité médicale comme à l’hôpital,</li>
                 <li>En métropole comme en opération extérieure.</li>
             </ul>
             <p>Fort de ces expériences, de ces compétences spécifiques et étant inscrit sur les listes d'aptitudes aux Emplois Réservés Défense,</p>
-            <p><span class="marecherche">ma recherche est de trouver un poste adapté à mon handicap en mettant toute ma motivation et tout mon engagement au service de la Fonction Publique à la Réunion.</span></p>
-            <div class="bottom-images">
-                <a target="_blank" href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense/">
-                    <img src="images/image_logo_LinkedIn.jpeg" alt="Logo LinkedIn" class="linkedin-logo">
-                </a>
+            <div class="highlight-box">
+                <b>Ma recherche est de trouver un poste adapté à mon handicap en mettant toute ma motivation et tout mon engagement au service de la Fonction Publique à la Réunion.</b>
             </div>
-            <div id="qrcode"></div> <!-- Conteneur pour le QR code -->
         </div>
-        <div class="column">
+        <div class="column right-column">
             <h1>À propos de moi</h1>
             <p>Bonjour, je m'appelle Jean MOREL et je suis Infirmier Militaire du Service de Santé des Armées (S.S.A.).</p>
             <p>Je participe au Service Public depuis déjà plus de 24 ans.</p>
@@ -55,13 +55,14 @@
                 <li>Infirmier en Antenne Médicale de <span class="important">Gendarmerie</span> (3 ans)</li>
                 <li>Infirmier dans l'<span class="important">Armée de l'Air et de l'Espace</span> (2 ans)</li>
             </ul>
-            <h3>Postes d'infirmier adaptés à mon handicap:</h3>
+            <h3>Postes possibles d'infirmier adaptés à mon handicap:</h3>
             <ul>
-                <li>Infirmier responsable de la Sécurisation des données médicales informatisées (CORSIC).</li>
-                <li>Infirmier responsable de l'installation des serveurs et de la Surveillance Informatique.</li>
-                <li>Infirmier responsable de la Coordination des moyens informatiques, des soutiens et de la maintenance informatique.</li>
-                <li>Infirmier responsable de la Veille Sanitaire et des messages épidémiologiques.</li>
-                <li>Infirmier responsable d'un Bureau Administratif Médical.</li>
+                <li>Au caisson hypertbare au CHU site Sud.</li>
+                <li>Responsable de la Sécurisation des données médicales informatisées (CORSIC).</li>
+                <li>Responsable de l'installation des serveurs et de la Surveillance Informatique.</li>
+                <li>Responsable de la Coordination des moyens, des soutiens et de la maintenance informatique.</li>
+                <li>Responsable de la Veille Sanitaire et des messages épidémiologiques.</li>
+                <li>Dans un Bureau Administratif et Médical.</li>
             </ul>
         </div>
     </div>
@@ -70,12 +71,11 @@
     <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
     <script>
         const qrCode = new QRCodeStyling({
-            width: 200,
-            height: 200,
-            data: "C:\Users\jeanm\OneDrive\Documents\Mes CV\CV Infirmier Jean MOREL EDUCATION NATIONALE.pdf",
-            image: "images/image_logo_LinkedIn.jpeg", // Vous pouvez inclure une image dans le QR code
+            width: 240,
+            height: 240,
+            data: "https://1drv.ms/b/s!Aiwuj4JMCHPG7mcfkqWlBscy6nyO?e=hWAqrk",
             dotsOptions: {
-                color: "#4267b2",
+                color: "blue", // Same blue color as the headers
                 type: "rounded"
             },
             backgroundOptions: {
@@ -83,12 +83,13 @@
             },
             imageOptions: {
                 crossOrigin: "anonymous",
-                margin: 20
+                margin: 10
             }
         });
 
         qrCode.append(document.getElementById("qrcode"));
     </script>
+    <script type="text/javascript" async src="https://platform.linkedin.com/badges/js/profile.js"></script>
 </body>
 
 </html>

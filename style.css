@@ -17,7 +17,7 @@ body {
 
 /* Container Styles */
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -25,53 +25,129 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     box-sizing: border-box;
-    position: relative;
     overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 }
 
 /* Column Styles */
 .column {
-    width: 48%;
+    width: 100%;
     box-sizing: border-box;
-    position: relative;
-    z-index: 1;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .column {
+        width: 48%;
+    }
+}
+
+/* Info Section Styles */
+.info-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px; /* Space between LinkedIn badge and QR code */
+    justify-content: center; /* Center the items */
+}
+
+#qrcode {
+    width: 240px; /* Size of QR code */
+    height: 240px;
+}
+
+.linkedin-section .badge-base {
+    transform: scale(0.8); /* Adjust size to fit within the container */
+}
+
+.linkedin-section .badge-base__link {
+    display: none; /* Hide the LinkedIn text link */
+}
+
+.linkedin-link {
+    font-size: 0.9em;
+    color: blue;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.linkedin-link a {
+    color: blue;
+    text-decoration: none;
+}
+
+.linkedin-link a:hover {
+    text-decoration: underline;
 }
 
 /* Header Styles */
-h1, h2, h3 {
+h1 {
     font-family: 'Lobster', cursive;
     font-size: 2em;
     color: blue;
     margin: 10px 0;
 }
-
+h2, h3 {
+    font-family: 'Lobster', cursive;
+    font-size: 1.5em;
+    color: blue;
+    margin: 10px 0;
+}
 /* Paragraph and Link Styles */
 a, p {
     font-family: 'Open Sans', sans-serif;
     color: black;
-    font-size: 1em;
+    font-size: 0.9em;
     font-style: normal;
     text-align: justify;
     text-decoration: none;
     margin: 5px 0;
 }
 
+b {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 0.9em;
+    font-style: normal;
+    text-align: justify;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+/* Highlight Box */
+.highlight-box {
+    background-color: blue; /* Blue background */
+    color: white; /* White text */
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    text-align: justify;
+}
+
 /* CV Link Style */
 .cv-link {
     display: block;
-    margin-bottom: 20px;
+    margin: 10px auto; /* Center horizontally */
     font-weight: bold;
     color: blue;
     text-decoration: underline;
+    text-align: center; /* Center text */
 }
 
 /* List Styles */
 ul {
     font-family: 'Open Sans', sans-serif;
     color: black;
-    font-size: 1em;
+    font-size: 0.9em;
     font-style: normal;
     margin: 10px 0;
     padding-left: 20px;
@@ -106,26 +182,19 @@ img {
 }
 
 .logo, .linkedin-logo {
-    max-width: 100px;
+    max-width: 80px;
     height: auto;
 }
 
-/* Profile Picture Styles */
-.profile-pic {
-    max-width: 150px;
-    height: auto;
-}
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+    }
 
-/* Bottom Images Layout */
-.bottom-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Adjust the gap as needed */
-    margin-top: 20px;
-}
-
-/* Link Hover Effect */
-a:hover {
-    text-decoration: underline;
+    #qrcode, .badge-base {
+        width: 200px;
+        height: 200px;
+    }
 }
