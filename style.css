@@ -1,264 +1,145 @@
-/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap');
 
-/* Global Styles */
 body {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
 }
 
-/* Container Styles */
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    overflow: hidden;
+  width: 100%;
+  max-width: 960px;
+  margin: 20px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 768px) {
-    .container {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
+header {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-/* Column Styles */
-.column {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
+.title {
+  font-family: 'Lobster', cursive;
+  font-size: 2.5em;
+  margin: 0;
+  color: #2c3e50;
 }
 
-@media (min-width: 768px) {
-    .column {
-        width: 48%;
-    }
+.subtitle {
+  font-size: 1.2em;
+  color: #7f8c8d;
 }
 
-/* Info Section Styles */
-.info-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    justify-content: center;
+section h2 {
+  color: #2980b9;
+  border-bottom: 2px solid #2980b9;
+  padding-bottom: 5px;
+  margin-top: 30px;
 }
 
-#qrcode {
-    width: 240px;
-    height: 240px;
-}
-
-.linkedin-section .badge-base {
-    transform: scale(0.8);
-}
-
-.linkedin-section .badge-base__link {
-    display: none;
-}
-
-.linkedin-link {
-    font-size: 0.9em;
-    color: blue;
-    text-decoration: none;
-    word-break: break-word;
-}
-
-.linkedin-link a {
-    color: blue;
-    text-decoration: none;
-}
-
-.linkedin-link a:hover {
-    text-decoration: underline;
-}
-
-/* Header Styles */
-h1 {
-    font-family: 'Lobster', cursive;
-    font-size: 2em;
-    color: blue;
-    margin: 10px 0;
-}
-
-h2, h3 {
-    font-family: 'Lobster', cursive;
-    font-size: 1.5em;
-    color: blue;
-    margin: 10px 0;
-}
-
-/* Paragraph and Link Styles */
-a, p {
-    font-family: 'Open Sans', sans-serif;
-    color: black;
-    font-size: 0.9em;
-    text-align: justify;
-    margin: 5px 0;
-    text-decoration: none;
-}
-
-b {
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    font-size: 0.9em;
-    text-align: justify;
-    margin: 5px 0;
-    text-decoration: none;
-}
-
-/* Highlight Box */
-.highlight-box {
-    background-color: blue;
-    color: white;
-    padding: 10px;
-    border-radius: 8px;
-    margin: 10px 0;
-    text-align: justify;
-}
-
-/* CV Link Style */
-.cv-link {
-    display: block;
-    margin: 10px auto;
-    font-weight: bold;
-    color: blue;
-    text-decoration: underline;
-    text-align: center;
-}
-
-/* List Styles */
 ul {
-    font-family: 'Open Sans', sans-serif;
-    color: black;
-    font-size: 0.9em;
-    margin: 10px 0;
-    padding-left: 20px;
-    text-align: left;
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
-ul li {
-    margin-bottom: 5px;
+li {
+  margin-bottom: 8px;
 }
 
-/* Highlighted Text */
-.important {
-    color: rgb(209, 5, 228);
-    font-weight: bold;
+p {
+  margin-bottom: 15px;
 }
 
-/* Specific Class for Emphasized Text */
-.marecherche {
-    font-weight: bold;
-    font-size: larger;
-    color: blue;
-    text-decoration: underline;
+a {
+  color: #2980b9;
+  text-decoration: none;
 }
 
-/* Image Styles */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-    border-radius: 8px;
+a:hover {
+  text-decoration: underline;
 }
 
-.logo, .linkedin-logo {
-    max-width: 80px;
-    height: auto;
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #999;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 767px) {
-    .info-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #qrcode, .badge-base {
-        width: 200px;
-        height: 200px;
-    }
+/* Bouton Haut de page */
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #2980b9;
+  color: white;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
 }
 
-/* Language Switch Button */
-.language-switch {
-    text-align: right;
-    margin: 20px;
-    position: relative;
-    z-index: 10;
+#topBtn:hover {
+  background-color: #1c5980;
 }
 
-.language-switch a {
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 0.9em;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Drapeau flottant */
+.floating-flag {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 28px;
+  z-index: 100;
+  animation: float 2s ease-in-out infinite;
 }
 
-.language-switch a:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+.floating-flag img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.3);
 }
 
-.flag-icon {
-    height: 18px;
-    width: auto;
-    vertical-align: middle;
-    margin-right: 8px;
-    border-radius: 3px;
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
 }
 
-@media (max-width: 480px) {
-    .language-switch {
-        text-align: center;
-        margin: 10px auto;
-    }
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
 
-    .language-switch a {
-        font-size: 0.8em;
-        padding: 8px 12px;
-    }
+  .title {
+    font-size: 2em;
+  }
 
-    .flag-icon {
-        height: 16px;
-        margin-right: 5px;
-    }
-}
-/* Fade-in Animation */
-.container {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1s ease-out forwards;
-}
+  #topBtn {
+    padding: 10px 14px;
+    font-size: 16px;
+  }
 
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  .floating-flag {
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 24px;
+  }
 }
