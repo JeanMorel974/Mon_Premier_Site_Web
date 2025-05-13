@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Jean MOREL - Curriculum Vitae and About</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Jean MOREL - Curriculum Vitae and About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- LANGUAGE SWITCH BUTTON -->
-  <div class="language-switch">
-    <a href="index.html">
-      <img src="https://flagcdn.com/w40/fr.png" alt="French Flag" class="flag-icon">
-      Français
-    </a>
-  </div>
+  <!-- Floating French flag -->
+  <a href="index.html" class="floating-flag" title="Switch to French">
+    <img src="https://flagcdn.com/fr.svg" alt="Français" />
+  </a>
 
   <div class="container">
     <div class="column left-column">
@@ -25,7 +23,11 @@
 
       <div class="info-section">
         <a target="_blank" href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense/">
-          <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="jean-morel-infirmier-reconversion-emploi-reserve-defense" data-version="v1">
+          <div class="badge-base LI-profile-badge"
+               data-locale="en_US" data-size="medium" data-theme="dark"
+               data-type="VERTICAL"
+               data-vanity="jean-morel-infirmier-reconversion-emploi-reserve-defense"
+               data-version="v1">
           </div>
         </a>
         <div id="qrcode"></div>
@@ -42,6 +44,7 @@
         <li>In field medical units and hospitals</li>
         <li>In mainland France and overseas operations</li>
       </ul>
+
       <p>With this experience, these specific skills, and my registration on the Defense Reserved Jobs list,</p>
       <div class="highlight-box">
         <b>My goal is to find a position adapted to my disability by putting all my motivation and commitment into the service of the Civil Service in Reunion.</b>
@@ -79,6 +82,14 @@
     </div>
   </div>
 
+  <!-- Back to top button -->
+  <button onclick="scrollToTop()" id="topBtn" title="Back to Top">↑</button>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
   <script>
     const qrCode = new QRCodeStyling({
@@ -97,7 +108,6 @@
         margin: 10
       }
     });
-
     qrCode.append(document.getElementById("qrcode"));
   </script>
   <script type="text/javascript" async src="https://platform.linkedin.com/badges/js/profile.js"></script>
