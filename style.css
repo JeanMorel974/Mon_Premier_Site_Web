@@ -198,3 +198,29 @@ img {
         height: 200px;
     }
 }
+/* Language Switch Button */
+.language-switch {
+    text-align: right;
+    margin: 20px;
+}
+
+.language-switch a {
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.language-switch a:hover {
+    background-color: #0056b3;
+}
+.flag-icon {
+    height: 16px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+    border-radius: 2px;
+}
