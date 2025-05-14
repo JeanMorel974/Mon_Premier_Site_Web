@@ -16,13 +16,35 @@
       margin-top: 20px;
     }
 
-    .qr-code img {
+    .qr-code img, #qrcode canvas {
       max-width: 150px;
       height: auto;
     }
 
     .linkedin-widget {
       min-width: 200px;
+    }
+
+    .cv-top-center {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+
+    .cv-link {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #005B99;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cv-link:hover {
+      background-color: #004080;
     }
   </style>
 </head>
@@ -35,14 +57,14 @@
 
   <div class="container">
     <div class="column left-column">
+      <div class="cv-top-center">
+        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:a1c79ce0-5ae4-4c36-b5fa-eed290407312" target="_blank" class="cv-link">📄 Télécharger mon CV (PDF)</a>
+      </div>
+
       <h1>Curriculum Vitae – Infirmier Jean MOREL</h1>
-      <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:a1c79ce0-5ae4-4c36-b5fa-eed290407312" target="_blank" class="cv-link">Télécharger mon CV (PDF)</a>
 
       <!-- QR Code + LinkedIn côte à côte -->
       <div class="qr-linkedin">
-        <div class="qr-code">
-          <div id="qrcode"></div>
-        </div>
         <div class="linkedin-widget">
           <div class="LI-profile-badge"
                data-locale="fr_FR"
@@ -55,6 +77,9 @@
               Jean MOREL
             </a>
           </div>
+        </div>
+        <div class="qr-code">
+          <div id="qrcode"></div>
         </div>
       </div>
 
@@ -120,7 +145,7 @@
     const qrCode = new QRCodeStyling({
       width: 240,
       height: 240,
-      data: "https://1drv.ms/b/s!Aiwuj4JMCHPG7mcfkqWlBscy6nyO?e=hWAqrk",
+      data: "https://acrobat.adobe.com/id/urn:aaid:sc:EU:a1c79ce0-5ae4-4c36-b5fa-eed290407312",
       dotsOptions: {
         color: "blue",
         type: "rounded"
