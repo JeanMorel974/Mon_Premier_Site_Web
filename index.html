@@ -6,6 +6,25 @@
   <title>Jean MOREL - CV & Présentation</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .qr-linkedin {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .qr-code img {
+      max-width: 150px;
+      height: auto;
+    }
+
+    .linkedin-widget {
+      min-width: 200px;
+    }
+  </style>
 </head>
 <body>
 
@@ -19,16 +38,24 @@
       <h1>Curriculum Vitae – Infirmier Jean MOREL</h1>
       <a href="https://1drv.ms/b/s!Aiwuj4JMCHPG7mcfkqWlBscy6nyO?e=hWAqrk" target="_blank" class="cv-link">Télécharger mon CV (PDF)</a>
 
-      <div class="info-section">
-        <a target="_blank" href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense/">
-          <div class="badge-base LI-profile-badge"
-               data-locale="fr_FR" data-size="medium" data-theme="dark"
-               data-type="VERTICAL"
+      <!-- QR Code + LinkedIn côte à côte -->
+      <div class="qr-linkedin">
+        <div class="qr-code">
+          <div id="qrcode"></div>
+        </div>
+        <div class="linkedin-widget">
+          <div class="LI-profile-badge"
+               data-locale="fr_FR"
+               data-size="medium"
+               data-theme="light"
+               data-type="horizontal"
                data-vanity="jean-morel-infirmier-reconversion-emploi-reserve-defense"
                data-version="v1">
+            <a class="LI-simple-link" href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense">
+              Jean MOREL
+            </a>
           </div>
-        </a>
-        <div id="qrcode"></div>
+        </div>
       </div>
 
       <p>Fort de <span class="important">25 ans de service</span> au sein du <span class="important">Service de Santé des Armées</span>, j’ai exercé en tant qu’infirmier dans divers corps militaires, notamment :</p>
