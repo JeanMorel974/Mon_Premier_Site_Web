@@ -16,7 +16,7 @@
       margin-top: 20px;
     }
 
-    .qr-code img {
+    .qr-code img, #qrcode canvas {
       max-width: 150px;
       height: auto;
     }
@@ -24,25 +24,47 @@
     .linkedin-widget {
       min-width: 200px;
     }
+
+    .cv-top-center {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+
+    .cv-link {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #005B99;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cv-link:hover {
+      background-color: #004080;
+    }
   </style>
 </head>
 <body>
 
-  <!-- Drapeau français flottant -->
-  <a href="index.html" class="floating-flag" title="Basculer en français">
+  <!-- Floating French flag -->
+  <a href="index.html" class="floating-flag" title="Passer en français">
     <img src="https://flagcdn.com/fr.svg" alt="Français" />
   </a>
 
   <div class="container">
     <div class="column left-column">
-      <h1>Resume – Nurse Jean MOREL</h1>
-      <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:a1c79ce0-5ae4-4c36-b5fa-eed290407312" target="_blank" class="cv-link">Download my CV (PDF)</a>
+      <div class="cv-top-center">
+        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:a1c79ce0-5ae4-4c36-b5fa-eed290407312" target="_blank" class="cv-link">📄 Download my CV (PDF)</a>
+      </div>
 
-      <!-- QR Code + LinkedIn side-by-side -->
+      <h1>Resume – Nurse Jean MOREL</h1>
+
+      <!-- QR Code + LinkedIn side by side -->
       <div class="qr-linkedin">
-        <div class="qr-code">
-          <div id="qrcode"></div>
-        </div>
         <div class="linkedin-widget">
           <div class="LI-profile-badge"
                data-locale="en_US"
@@ -56,58 +78,61 @@
             </a>
           </div>
         </div>
+        <div class="qr-code">
+          <div id="qrcode"></div>
+        </div>
       </div>
 
-      <p>With <span class="important">25 years of service</span> in the <span class="important">French Military Health Service</span>, I have worked as a nurse in various military units, including:</p>
+      <p>With <span class="important">25 years of service</span> in the <span class="important">French Military Health Service</span>, I have worked as a nurse in various military corps, including:</p>
       <ul>
-        <li>The <span class="important">French Navy</span></li>
+        <li>The <span class="important">Navy</span></li>
         <li>The <span class="important">Army</span></li>
-        <li><span class="important">Volunteer Firefighters</span> under the <span class="important">SAMU 69</span></li>
+        <li><span class="important">Volunteer Firefighters</span> under <span class="important">SAMU 69</span></li>
         <li>The <span class="important">Gendarmerie</span></li>
         <li>The <span class="important">Air and Space Force</span></li>
-        <li>Onboard naval units and on land</li>
+        <li>On naval units and land units</li>
         <li>In field medical units and hospitals</li>
         <li>In mainland France and overseas operations</li>
       </ul>
 
-      <p>With this experience and my registration on the list of Reserved Defense Jobs,</p>
+      <p>With this experience and my registration on the Reserved Defense Jobs list,</p>
       <div class="highlight-box">
-        <b>My goal is to find a position adapted to my disability, putting all my motivation and commitment at the service of the French Public Sector in La Réunion.</b>
+        <b>My goal is to find a position adapted to my disability, putting all my motivation and commitment at the service of the Public Service in La Réunion.</b>
       </div>
     </div>
 
     <div class="column right-column">
       <h1>About Me</h1>
-      <p>Hello, my name is Jean MOREL. I am a military nurse in the French Military Health Service (SSA).</p>
-      <p>I have been working in the French public sector for over 25 years.</p>
-      <p>I am currently awaiting medical discharge and professional retraining due to service-related injuries.</p>
-      <p>I hold the <span class="important">Recognition of Disabled Worker Status (RQTH)</span>, the <span class="important">Title of National Recognition</span>, and I am under the <span class="important">Employment Obligation</span>. I am looking for a nursing position adapted to my disability under the Reserved Defense Jobs framework.</p>
+      <p>Hello, my name is Jean MOREL, I am a military nurse in the French Military Health Service (SSA).</p>
+      <p>I have worked in the public sector for more than 25 years.</p>
+      <p>I am awaiting medical discharge and career transition due to service-related injuries.</p>
+      <p>Holder of the <span class="important">Recognition of Disabled Worker Status (RQTH)</span>, the <span class="important">National Recognition Title</span>, and subject to the <span class="important">Employment Obligation</span>, I am looking for a nursing position adapted to my disability under the Reserved Defense Jobs program.</p>
 
       <h2>Nursing Positions Held:</h2>
       <ul>
-        <li><span class="important">French Navy</span> – Hyperbaric Nurse, Class II Mention C</li>
+        <li><span class="important">Navy</span> – Hyperbaric nurse (Class II Mention C)</li>
         <li><span class="important">Army</span> – 7 years in hospitals and overseas operations</li>
-        <li><span class="important">Emergency Services</span> – 4 years</li>
-        <li><span class="important">Visceral Surgery</span> – 2 years</li>
-        <li><span class="important">Specialized Surgery</span> – 3 years</li>
-        <li><span class="important">Volunteer Firefighter Nurse (ISPV) at SDIS69</span> – 1.5 years</li>
-        <li><span class="important">Gendarmerie Medical Unit Nurse</span> – 3 years</li>
-        <li><span class="important">Air and Space Force Nurse</span> – 2 years</li>
+        <li><span class="important">Emergency care</span> – 4 years</li>
+        <li><span class="important">Visceral surgery</span> – 2 years</li>
+        <li><span class="important">Specialized surgery</span> – 3 years</li>
+        <li><span class="important">Volunteer firefighter nurse (ISPV) – SDIS69</span> – 1.5 years</li>
+        <li><span class="important">Gendarmerie medical unit</span> – 3 years</li>
+        <li><span class="important">Air and Space Force</span> – 2 years</li>
       </ul>
 
       <h3>Positions Considered (adapted to my disability):</h3>
       <ul>
-        <li>Hyperbaric Nurse at CHU Sud</li>
-        <li>Medical IT Security Officer (CORSIC)</li>
-        <li>IT Installation and Monitoring Technician</li>
-        <li>Coordinator of IT Resources, Support and Maintenance</li>
-        <li>Sanitary Surveillance and Epidemiological Messaging Officer</li>
-        <li>Administrative and Medical Office Positions</li>
+        <li>Hyperbaric nurse – CHU Sud</li>
+        <li>Medical Data Security Officer (CORSIC)</li>
+        <li>IT installation and monitoring technician</li>
+        <li>IT resource coordinator, support and maintenance</li>
+        <li>Public health surveillance and epidemiological messaging officer</li>
+        <li>Medical and administrative office roles</li>
       </ul>
     </div>
   </div>
 
-  <!-- Scroll-to-top Button -->
+  <!-- Back to top button -->
   <button onclick="scrollToTop()" id="topBtn" title="Back to top">↑</button>
 
   <script>
@@ -120,7 +145,7 @@
     const qrCode = new QRCodeStyling({
       width: 240,
       height: 240,
-      data: "https://1drv.ms/b/s!Aiwuj4JMCHPG7mcfkqWlBscy6nyO?e=hWAqrk",
+      data: "https://acrobat.adobe.com/id/urn:aaid:sc:EU:a1c79ce0-5ae4-4c36-b5fa-eed290407312",
       dotsOptions: {
         color: "blue",
         type: "rounded"
