@@ -3,14 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jean MOREL - Infirmier militaire | Emploi Réservé | La Réunion</title>
-  <meta name="description" content="CV officiel de Jean Morel, infirmier militaire français avec 25 ans de service, en recherche d’un emploi réservé dans la Fonction Publique à La Réunion.">
-  <meta name="keywords" content="Jean Morel, Infirmier militaire, Emploi Réservé, La Réunion, Fonction Publique, SSA, RQTH, Hyperbare">
-  <meta name="author" content="Jean MOREL">
+  <title>Jean MOREL - CV & Présentation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .qr-linkedin {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .qr-code img {
+      max-width: 150px;
+      height: auto;
+    }
+
+    .linkedin-widget {
+      min-width: 200px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Jean MOREL - Infirmier militaire</h1>
-  <p>Bienvenue sur mon CV en ligne. Téléchargez <a href="CV-JeanMorel.pdf">le CV en français (PDF)</a>.</p>
-  <a href="index-en.html">→ Switch to English</a>
+
+  <!-- Drapeau anglais flottant -->
+  <a href="index-en.html" class="floating-flag" title="Switch to English">
+    <img src="https://flagcdn.com/gb.svg" alt="English" />
+  </a>
+
+  <div class="container">
+    <div class="column left-column">
+      <h1>Curriculum Vitae – Infirmier Jean MOREL</h1>
+      <a href="Images/CV-JeanMorel.pdf" target="_blank" class="cv-link">Télécharger mon CV (PDF)</a>
+
+      <!-- QR Code + LinkedIn côte à côte -->
+      <div class="qr-linkedin">
+        <div class="qr-code">
+          <div id="qrcode"></div>
+        </div>
+        <div class="linkedin-widget">
+          <div class="LI-profile-badge"
+               data-locale="fr_FR"
+               data-size="medium"
+               data-theme="light"
+               data-type="horizontal"
+               data-vanity="jean-morel-infirmier-reconversion-emploi-reserve-defense"
+               data-version="v1">
+            <a class="LI-simple-link" href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense">
+              Jean MOREL
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p>Fort de <span class="important">25 ans de service</span> au sein du <span class="important">Service de Santé des Armées</span>, j’ai exercé en tant qu’infirmier dans divers corps militaires, notamment :</p>
+      <ul>
+        <li>La <span class="important">Marine nationale</span></li>
+        <li>L’<span class="important">Armée de Terre</span></li>
+        <li>Les <span class="important">Sapeurs-Pompiers Volontaires</span> protocolé par le <span class="important">SAMU 69</span></li>
+        <li>La <span class="important">Gendarmerie</span></li>
+        <li>L’<span class="important">Armée de l’air et de l’espace</span></li>
+        <li>À bord d’unités navales et en unités terrestres</li>
+        <li>En unités médicales de campagne et en hôpitaux</li>
+        <li>En métropole et en opérations extérieures</li>
+      </ul>
+
+      <p>Avec cette expérience, ces compétences spécifiques, et mon inscription sur la liste des Emplois Réservés Défense,</p>
+      <div class="highlight-box">
+        <b>Mon objectif est de trouver un poste adapté à mon handicap, en mettant toute ma motivation et mon engagement au service de la Fonction publique à La Réunion.</b>
+      </div>
+    </div>
+
+    <div class="column right-column">
+      <h1>À propos de moi</h1>
+      <p>Bonjour, je m'appelle Jean MOREL, je suis infirmier militaire au Service de Santé des Armées (SSA).</p>
+      <p>Je travaille dans la Fonction publique depuis plus de 25 ans.</p>
+      <p>Je suis en attente de réforme médicale et de reconversion professionnelle suite à des blessures reconnues en service.</p>
+      <p>Titulaire de la <span class="important">Reconnaissance de la Qualité de Travailleur Handicapé (RQTH)</span>, du <span class="important">Titre de Reconnaissance de la Nation</span> et ayant l’<span class="important">Obligation d’Emploi</span>, je cherche un poste d’infirmier adapté à mon handicap dans le cadre des Emplois Réservés Défense.</p>
+
+      <h2>Postes infirmiers occupés :</h2>
+      <ul>
+        <li><span class="important">Marine nationale</span> – Hyperbariste et accompagnateur caisson hyperbare Classe II Mention C</li>
+        <li><span class="important">Armée de Terre</span> – 7 ans en hôpitaux et en opérations extérieures</li>
+        <li><span class="important">Urgences</span> – 4 ans</li>
+        <li><span class="important">Chirurgie viscérale</span> – 2 ans</li>
+        <li><span class="important">Chirurgie spécialisée</span> – 3 ans</li>
+        <li><span class="important">Infirmier Sapeur-Pompier Volontaire (ISPV) au SDIS69</span> – 1,5 an</li>
+        <li><span class="important">Infirmier en Antenne Médicale de Gendarmerie</span> – 3 ans</li>
+        <li><span class="important">Infirmier dans l’Armée de l’air et de l’espace</span> – 2 ans</li>
+      </ul>
+
+      <h3>Postes envisageables adaptés à mon handicap :</h3>
+      <ul>
+        <li>Infirmier hyperbare au CHU site Sud</li>
+        <li>Responsable Sécurité des Données Médicales Informatisées (CORSIC)</li>
+        <li>Agent d’installation de serveurs et de veille informatique</li>
+        <li>Coordinateur des ressources informatiques, support et maintenance</li>
+        <li>Agent Responsable de veille sanitaire et de messagerie épidémiologique</li>
+        <li>Postes administratifs et médicaux en bureau</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bouton haut de page -->
+  <button onclick="scrollToTop()" id="topBtn" title="Haut de page">↑</button>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+  <script>
+    const qrCode = new QRCodeStyling({
+      width: 240,
+      height: 240,
+      data: "Images/CV-JeanMorel.pdf",
+      dotsOptions: {
+        color: "blue",
+        type: "rounded"
+      },
+      backgroundOptions: {
+        color: "#ffffff"
+      },
+      imageOptions: {
+        crossOrigin: "anonymous",
+        margin: 10
+      }
+    });
+    qrCode.append(document.getElementById("qrcode"));
+  </script>
+  <script type="text/javascript" async src="https://platform.linkedin.com/badges/js/profile.js"></script>
 </body>
 </html>
