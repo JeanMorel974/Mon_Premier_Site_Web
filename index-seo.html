@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jean MOREL - Infirmier militaire | Emploi réservé | La Réunion</title>
+
+  <!-- Balises SEO -->
+  <meta name="description" content="CV officiel en ligne de Jean MOREL, infirmier militaire avec 25 ans de service, en recherche d'un emploi réservé dans la fonction publique à La Réunion.">
+  <meta name="keywords" content="Jean Morel, Infirmier militaire, Emploi réservé, Fonction publique, La Réunion, SSA, RQTH, Hyperbare, CORSIC, reconversion, infirmier défense">
+  <meta name="author" content="Jean MOREL" />
+
+  <!-- Open Graph / Prévisualisation réseaux sociaux -->
+  <meta property="og:title" content="Jean MOREL - Infirmier militaire | La Réunion">
+  <meta property="og:description" content="25 ans de service au sein du SSA. Recherche un poste réservé dans la fonction publique à La Réunion.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.github.io/index.html">
+  <meta property="og:image" content="https://yourdomain.github.io/Images/photo-profile.jpg">
+
+  <!-- CSS & Polices -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a href="index-en.html" class="floating-flag" title="Switch to English">
+    <img src="https://flagcdn.com/gb.svg" alt="English" />
+  </a>
+
+  <div class="container">
+    <div class="column left-column">
+      <div class="cv-top-center">
+        <a href="Images/CV-JeanMorel.pdf" target="_blank" class="cv-link">📄 Télécharger mon CV (PDF)</a>
+      </div>
+
+      <h1>Curriculum Vitae – Infirmier Jean MOREL</h1>
+
+      <div class="qr-linkedin">
+        <div class="linkedin-widget">
+          <div class="LI-profile-badge"
+               data-locale="fr_FR"
+               data-size="medium"
+               data-theme="light"
+               data-type="horizontal"
+               data-vanity="jean-morel-infirmier-reconversion-emploi-reserve-defense"
+               data-version="v1">
+            <a class="LI-simple-link"
+               href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense"
+               target="_blank"
+               rel="noopener noreferrer"
+               title="Voir le profil LinkedIn de Jean MOREL">
+              Jean MOREL
+            </a>
+          </div>
+        </div>
+        <div class="qr-code">
+          <div id="qrcode"></div>
+        </div>
+      </div>
+
+      <p>Fort de <span class="important">25 ans de service</span> au sein du <span class="important">Service de Santé des Armées</span>, j’ai exercé en tant qu’infirmier dans la Marine, l’Armée de Terre, les Pompiers, la Gendarmerie, l’Armée de l’Air, en hôpital et en opérations extérieures.</p>
+    </div>
+
+    <div class="column right-column">
+      <h2>À propos de moi</h2>
+      <p>Je suis infirmier militaire en reconversion à La Réunion, titulaire d'une RQTH, et je cherche un poste réservé adapté à mon handicap dans la fonction publique.</p>
+
+      <h2>Compétences clés</h2>
+      <ul>
+        <li>Infirmier Organisateur de l’Accueil (I.O.A.)</li>
+        <li>Technicien en Soins Hyperbares (I.T.S.H.)</li>
+        <li>Référent Hémovigilance</li>
+        <li>Évacuations sanitaires aériennes (MORPHEE)</li>
+      </ul>
+
+      <h2>Langues</h2>
+      <ul>
+        <li>Français (incluant le créole réunionnais)</li>
+        <li>Anglais – Intermédiaire</li>
+      </ul>
+    </div>
+  </div>
+
+  <button onclick="scrollToTop()" id="topBtn" title="Haut de page">↑</button>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+  <script>
+    const qrCode = new QRCodeStyling({
+      width: 240,
+      height: 240,
+      data: "Images/CV-JeanMorel.pdf",
+      dotsOptions: {
+        color: "blue",
+        type: "rounded"
+      },
+      backgroundOptions: {
+        color: "#ffffff"
+      },
+      imageOptions: {
+        crossOrigin: "anonymous",
+        margin: 10
+      }
+    });
+    qrCode.append(document.getElementById("qrcode"));
+  </script>
+  <script type="text/javascript" async src="https://platform.linkedin.com/badges/js/profile.js"></script>
+</body>
+</html>
