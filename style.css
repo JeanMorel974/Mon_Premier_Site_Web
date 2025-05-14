@@ -1,48 +1,51 @@
-/* Google Fonts */
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap');
 
-/* Global */
+/* Global Styles */
 body {
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
   background-color: #f9f9f9;
   color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-/* Container */
 .container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 80px auto 40px;
-  padding: 20px;
-  background: #fff;
+  gap: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Columns */
+/* Column styles */
 .column {
+  flex: 1 1 400px;
+  min-width: 300px;
+}
+
+.left-column, .right-column {
   padding: 20px;
-  box-sizing: border-box;
 }
 
-.left-column {
-  flex: 1;
-  min-width: 300px;
-}
-
-.right-column {
-  flex: 1;
-  min-width: 300px;
-  border-left: 2px solid #eee;
-}
-
-h1, h2, h3 {
+h1 {
   font-family: 'Lobster', cursive;
-  color: #2c3e50;
+  font-size: 2em;
+  color: #005B99;
+  margin-top: 0;
+}
+
+h2, h3 {
+  color: #004080;
+}
+
+.important {
+  font-weight: 600;
+  color: #005B99;
 }
 
 ul {
@@ -53,107 +56,77 @@ li {
   margin-bottom: 8px;
 }
 
-.important {
-  font-weight: 600;
-  color: #2980b9;
-}
-
-.highlight-box {
-  margin-top: 20px;
-  padding: 15px;
-  background: #eaf2f8;
-  border-left: 4px solid #2980b9;
-  font-weight: bold;
-}
-
 .cv-link {
   display: inline-block;
-  margin: 15px 0;
-  padding: 10px 16px;
-  background-color: #2980b9;
-  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #005B99;
+  color: white;
   text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
+  border-radius: 5px;
 }
 
 .cv-link:hover {
-  background-color: #1c5980;
+  background-color: #003f66;
 }
 
-/* Floating flag */
+.highlight-box {
+  background-color: #e6f0ff;
+  border-left: 5px solid #005B99;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+/* Floating Flag Button */
 .floating-flag {
   position: fixed;
-  top: 15px;
-  right: 15px;
-  width: 40px;
-  height: 28px;
-  z-index: 100;
-  animation: float 2.5s ease-in-out infinite;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
 }
 
 .floating-flag img {
-  width: 100%;
+  width: 32px;
   height: auto;
-  border-radius: 4px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.3);
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-}
-
-/* Back to Top Button */
+/* Scroll-to-top Button */
 #topBtn {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #2980b9;
-  color: white;
-  cursor: pointer;
-  padding: 12px 16px;
-  border-radius: 50%;
   font-size: 18px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: background-color 0.3s ease;
+  padding: 10px 15px;
+  border: none;
+  background-color: #005B99;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
 }
 
 #topBtn:hover {
-  background-color: #1c5980;
+  background-color: #004080;
 }
 
-/* Responsive Design */
-@media (max-width: 900px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .right-column {
-    border-left: none;
-    border-top: 2px solid #eee;
-    margin-top: 20px;
-  }
+/* QR + LinkedIn section */
+.qr-linkedin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
 }
 
-@media (max-width: 500px) {
-  .cv-link {
-    font-size: 0.9em;
-    padding: 8px 12px;
-  }
+.qr-code img,
+#qrcode canvas {
+  max-width: 150px;
+  height: auto;
+}
 
-  #topBtn {
-    padding: 10px 14px;
-    font-size: 16px;
-  }
-
-  .floating-flag {
-    top: 10px;
-    right: 10px;
-    width: 32px;
-    height: 24px;
-  }
+.linkedin-widget {
+  min-width: 200px;
 }
