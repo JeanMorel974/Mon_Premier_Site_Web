@@ -1,89 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Jean MOREL - Curriculum Vitae and About</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jean MOREL - Resume & Presentation</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .qr-linkedin {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .qr-code img {
+      max-width: 150px;
+      height: auto;
+    }
+
+    .linkedin-widget {
+      min-width: 200px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Floating French flag -->
-  <a href="index.html" class="floating-flag" title="Switch to French">
+  <!-- Drapeau français flottant -->
+  <a href="index.html" class="floating-flag" title="Basculer en français">
     <img src="https://flagcdn.com/fr.svg" alt="Français" />
   </a>
 
   <div class="container">
     <div class="column left-column">
-      <h1>Curriculum Vitae – Nurse Jean MOREL</h1>
+      <h1>Resume – Nurse Jean MOREL</h1>
       <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:a1c79ce0-5ae4-4c36-b5fa-eed290407312" target="_blank" class="cv-link">Download my CV (PDF)</a>
 
-      <div class="info-section">
-        <a target="_blank" href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense/">
-          <div class="badge-base LI-profile-badge"
-               data-locale="en_US" data-size="medium" data-theme="dark"
-               data-type="VERTICAL"
+      <!-- QR Code + LinkedIn side-by-side -->
+      <div class="qr-linkedin">
+        <div class="qr-code">
+          <div id="qrcode"></div>
+        </div>
+        <div class="linkedin-widget">
+          <div class="LI-profile-badge"
+               data-locale="en_US"
+               data-size="medium"
+               data-theme="light"
+               data-type="horizontal"
                data-vanity="jean-morel-infirmier-reconversion-emploi-reserve-defense"
                data-version="v1">
+            <a class="LI-simple-link" href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense">
+              Jean MOREL
+            </a>
           </div>
-        </a>
-        <div id="qrcode"></div>
+        </div>
       </div>
 
-      <p>With <span class="important">25 years of service</span> in the <span class="important">Army Health Service</span>, I have worked as a nurse in various military branches, including:</p>
+      <p>With <span class="important">25 years of service</span> in the <span class="important">French Military Health Service</span>, I have worked as a nurse in various military units, including:</p>
       <ul>
         <li>The <span class="important">French Navy</span></li>
         <li>The <span class="important">Army</span></li>
-        <li><span class="important">Volunteer Firefighters</span> registered with the <span class="important">SAMU</span></li>
+        <li><span class="important">Volunteer Firefighters</span> under the <span class="important">SAMU 69</span></li>
         <li>The <span class="important">Gendarmerie</span></li>
         <li>The <span class="important">Air and Space Force</span></li>
-        <li>On-board naval units as well as land-based units</li>
+        <li>Onboard naval units and on land</li>
         <li>In field medical units and hospitals</li>
         <li>In mainland France and overseas operations</li>
       </ul>
 
-      <p>With this experience, these specific skills, and my registration on the Defense Reserved Jobs list,</p>
+      <p>With this experience and my registration on the list of Reserved Defense Jobs,</p>
       <div class="highlight-box">
-        <b>My goal is to find a position adapted to my disability by putting all my motivation and commitment into the service of the Civil Service in Reunion.</b>
+        <b>My goal is to find a position adapted to my disability, putting all my motivation and commitment at the service of the French Public Sector in La Réunion.</b>
       </div>
     </div>
 
     <div class="column right-column">
       <h1>About Me</h1>
-      <p>Hello, my name is Jean MOREL and I am a Military Nurse in the Army Health Service (SSA).</p>
-      <p>I have been involved in the Public Service for more than 25 years.</p>
-      <p>I am awaiting medical reform and professional retraining due to service-related injuries.</p>
-      <p>Holder of the <span class="important">Recognition of the Quality of Disabled Worker (RQTH)</span>, the <span class="important">Title of Recognition of the Nation</span>, and fulfilling the <span class="important">Employment Obligation</span>, I am looking for a nursing position adapted to my disability within the framework of the Defense Reserved Jobs.</p>
+      <p>Hello, my name is Jean MOREL. I am a military nurse in the French Military Health Service (SSA).</p>
+      <p>I have been working in the French public sector for over 25 years.</p>
+      <p>I am currently awaiting medical discharge and professional retraining due to service-related injuries.</p>
+      <p>I hold the <span class="important">Recognition of Disabled Worker Status (RQTH)</span>, the <span class="important">Title of National Recognition</span>, and I am under the <span class="important">Employment Obligation</span>. I am looking for a nursing position adapted to my disability under the Reserved Defense Jobs framework.</p>
 
-      <h2>Various nursing positions held:</h2>
+      <h2>Nursing Positions Held:</h2>
       <ul>
-        <li><span class="important">French Navy</span> – Hyperbarist and Hyperbaric Chamber Escort Class II Mention C</li>
-        <li><span class="important">Army</span> – 7 years in hospitals and during overseas operations</li>
-        <li><span class="important">Emergency services</span> – 4 years</li>
-        <li><span class="important">Visceral surgery</span> – 2 years</li>
-        <li><span class="important">Specialized surgery</span> – 3 years</li>
-        <li><span class="important">Volunteer firefighter nurse at SDIS69</span> – 1.5 years</li>
-        <li><span class="important">Nurse in the Gendarmerie Medical Unit</span> – 3 years</li>
-        <li><span class="important">Nurse in the Air and Space Force</span> – 2 years</li>
+        <li><span class="important">French Navy</span> – Hyperbaric Nurse, Class II Mention C</li>
+        <li><span class="important">Army</span> – 7 years in hospitals and overseas operations</li>
+        <li><span class="important">Emergency Services</span> – 4 years</li>
+        <li><span class="important">Visceral Surgery</span> – 2 years</li>
+        <li><span class="important">Specialized Surgery</span> – 3 years</li>
+        <li><span class="important">Volunteer Firefighter Nurse (ISPV) at SDIS69</span> – 1.5 years</li>
+        <li><span class="important">Gendarmerie Medical Unit Nurse</span> – 3 years</li>
+        <li><span class="important">Air and Space Force Nurse</span> – 2 years</li>
       </ul>
 
-      <h3>Possible nursing positions adapted to my disability:</h3>
+      <h3>Positions Considered (adapted to my disability):</h3>
       <ul>
-        <li>Hyperbaric chamber nurse at CHU South site</li>
-        <li>Responsible for Securing Computerized Medical Data (CORSIC)</li>
-        <li>Server Installation and IT Monitoring Officer</li>
-        <li>IT Resources Coordination, Support and Maintenance Officer</li>
-        <li>Health Surveillance and Epidemiological Messaging Officer</li>
+        <li>Hyperbaric Nurse at CHU Sud</li>
+        <li>Medical IT Security Officer (CORSIC)</li>
+        <li>IT Installation and Monitoring Technician</li>
+        <li>Coordinator of IT Resources, Support and Maintenance</li>
+        <li>Sanitary Surveillance and Epidemiological Messaging Officer</li>
         <li>Administrative and Medical Office Positions</li>
       </ul>
     </div>
   </div>
 
-  <!-- Back to top button -->
-  <button onclick="scrollToTop()" id="topBtn" title="Back to Top">↑</button>
+  <!-- Scroll-to-top Button -->
+  <button onclick="scrollToTop()" id="topBtn" title="Back to top">↑</button>
 
   <script>
     function scrollToTop() {
