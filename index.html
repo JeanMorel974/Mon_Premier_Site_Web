@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jean MOREL - CV & Présentation</title>
+  <title>Curriculum Vitæ Infirmier Jean MOREL</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KWCFXT21W9"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -15,79 +15,132 @@
     gtag('js', new Date());
     gtag('config', 'G-KWCFXT21W9');
   </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #ffffff;
+      color: #333;
+    }
+
+    .intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .intro h1 {
+      font-family: 'Lobster', cursive;
+      font-size: 2.2em;
+      color: #0077cc;
+      margin-bottom: 30px;
+    }
+
+    .cv-button {
+      background-color: #0077cc;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-bottom: 30px;
+      transition: background-color 0.3s;
+    }
+
+    .cv-button:hover {
+      background-color: #005fa3;
+    }
+
+    .info-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .linkedin-widget,
+    .qr-code {
+      min-width: 260px;
+    }
+
+    .floating-flag {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      width: 36px;
+      z-index: 1000;
+    }
+
+    .floating-flag img {
+      width: 100%;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 768px) {
+      .info-row {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <!-- Drapeau anglais flottant -->
-  <a href="index-en.html" class="flag floating-flag" title="Switch to English">
+  <!-- Drapeau pour switch de langue -->
+  <a href="index-en.html" class="floating-flag" title="Switch to English">
     <img src="https://flagcdn.com/gb.svg" alt="English" />
   </a>
 
-  <!-- Section Intro visible sans scroll -->
   <section class="intro">
-    <h1 class="title">Jean MOREL</h1>
-    <div class="cta-group">
-      <a href="Images/CV-JeanMorel.pdf" class="cv-button" download>Télécharger mon CV (PDF)</a>
-      <a href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense" target="_blank" class="linkedin-link">
-        Voir mon profil LinkedIn
-      </a>
-      <div class="qr-code">
-        <img src="Images/qrcode_linkedin.png" alt="QR Code LinkedIn" />
+    <h1>Curriculum Vitæ Infirmier Jean MOREL</h1>
+
+    <a href="Images/CV-JeanMorel.pdf" class="cv-button" download>Télécharger mon CV (PDF)</a>
+
+    <div class="info-row">
+      <div class="linkedin-widget">
+        <div class="LI-profile-badge"
+             data-locale="fr_FR"
+             data-size="medium"
+             data-theme="light"
+             data-type="horizontal"
+             data-vanity="jean-morel-infirmier-reconversion-emploi-reserve-defense"
+             data-version="v1">
+          <a class="LI-simple-link"
+             href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense"
+             target="_blank">
+            Jean MOREL – LinkedIn
+          </a>
+        </div>
       </div>
+
+      <div class="qr-code" id="qrcode"></div>
     </div>
   </section>
 
-  <!-- Contenu principal -->
-  <div class="container">
-    <section>
-      <h2>À propos de moi</h2>
-      <p>Je suis <span class="important">Jean MOREL</span>, infirmier militaire depuis 25 ans, aujourd'hui en reconversion dans le domaine du <span class="important">développement web</span> et du <span class="important">numérique en santé</span>. Reconnue travailleur handicapé, je suis animé par la volonté de mettre mes compétences au profit de la Fonction Publique à <span class="important">La Réunion</span>.</p>
-    </section>
-
-    <section>
-      <h2>Expérience professionnelle</h2>
-      <ul>
-        <li><strong>2024 - aujourd'hui :</strong> Reconversion professionnelle - Développement Web & Santé numérique</li>
-        <li><strong>1999 - 2024 :</strong> Infirmier militaire – <span class="important">Service de Santé des Armées</span></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Formation</h2>
-      <ul>
-        <li><strong>2024 :</strong> Formation autodidacte – HTML, CSS, JavaScript, Python</li>
-        <li><strong>1996 - 1999 :</strong> <span class="important">Diplôme d’État Infirmier</span> – Armée Française</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Compétences</h2>
-      <ul>
-        <li>Soins infirmiers et gestion d’équipe</li>
-        <li>Développement Web : HTML, CSS, JavaScript</li>
-        <li>Notions en Python, Git, GitHub</li>
-        <li>Anglais technique</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <ul>
-        <li>Email : jeanmorel@icloud.com</li>
-        <li>Téléphone : 06 93 97 07 84</li>
-        <li>LinkedIn :
-          <a href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense" target="_blank">
-            Voir mon profil LinkedIn
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <footer>
-      <p>Nombre de visiteurs :
-        <img src="https://www.cutercounter.com/hits.php?id=hrxpfxckp&nd=6&style=44" border="0" alt="compteur de visiteur">
-      </p>
-    </footer>
-  </div>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+  <script>
+    const qrCode = new QRCodeStyling({
+      width: 140,
+      height: 140,
+      data: "https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense",
+      dotsOptions: {
+        color: "#0077cc",
+        type: "rounded"
+      },
+      backgroundOptions: {
+        color: "#ffffff"
+      }
+    });
+    qrCode.append(document.getElementById("qrcode"));
+  </script>
+  <script async type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js"></script>
 </body>
 </html>
