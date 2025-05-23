@@ -47,7 +47,7 @@ h1 {
   margin-top: 20px;
   margin-bottom: 20px;
   font-style: normal;
-  white-space: nowrap; /* empêche retour à la ligne entre Jean et MOREL */
+  white-space: nowrap;
 }
 
 /* Sous-titres */
@@ -149,3 +149,10 @@ li {
 .linkedin-widget {
   min-width: 200px;
 }
+"""
+
+# Écriture dans un fichier
+style_file_path = Path("/mnt/data/style.css")
+style_file_path.write_text(style_css_content.strip(), encoding='utf-8')
+
+style_file_path.name
