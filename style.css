@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap');
 
 /* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
@@ -19,6 +23,8 @@ body {
   background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 /* Header */
@@ -50,16 +56,18 @@ section h2 {
 ul {
   list-style-type: none;
   padding-left: 0;
+  margin: 0;
 }
 
 ul li {
   margin-bottom: 8px;
 }
 
-/* Download Link */
+/* Download & Links */
 a {
   color: #0077cc;
   text-decoration: none;
+  word-break: break-word;
 }
 
 a:hover {
@@ -86,6 +94,7 @@ a:hover {
 footer {
   font-size: 0.85em;
   color: #666;
+  text-align: center;
 }
 
 /* Responsive Design */
@@ -100,6 +109,7 @@ footer {
 
   .container {
     padding: 15px;
+    margin: 10px;
   }
 
   section h2 {
