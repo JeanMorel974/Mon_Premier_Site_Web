@@ -1,85 +1,82 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap');
 
-/* Global Styles */
+/* Global Reset */
 * {
   box-sizing: border-box;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f9f9f9;
   margin: 0;
   padding: 0;
 }
 
-/* Container */
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px;
-  background: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
 }
 
-/* Header */
+/* Hero Section */
+.hero {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Title */
 .title {
   font-family: 'Lobster', cursive;
-  font-size: 2.5em;
-  margin: 0 0 10px;
-  text-align: center;
-}
-
-.subtitle {
-  text-align: center;
-  font-size: 1.2em;
-  margin-bottom: 30px;
-}
-
-/* Sections */
-section {
-  margin-bottom: 30px;
-}
-
-section h2 {
+  font-size: 2.2em;
   color: #0077cc;
-  border-bottom: 2px solid #0077cc;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
+/* CTA Group */
+.cta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
 }
 
-ul li {
-  margin-bottom: 8px;
-}
-
-/* Download & Links */
-a {
-  color: #0077cc;
+.cv-button,
+.linkedin-link {
+  background-color: #0077cc;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
   text-decoration: none;
-  word-break: break-word;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  max-width: 90%;
 }
 
-a:hover {
-  text-decoration: underline;
+.cv-button:hover,
+.linkedin-link:hover {
+  background-color: #005fa3;
+}
+
+/* QR Code */
+.qr-code img {
+  width: 120px;
+  height: auto;
+  border: 2px solid #0077cc;
+  border-radius: 8px;
 }
 
 /* Floating flag */
 .floating-flag {
-  position: fixed;
+  position: absolute;
   top: 10px;
   right: 10px;
-  width: 40px;
+  width: 36px;
   z-index: 1000;
 }
 
@@ -87,38 +84,5 @@ a:hover {
   width: 100%;
   height: auto;
   border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-/* Footer */
-footer {
-  font-size: 0.85em;
-  color: #666;
-  text-align: center;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-  .title {
-    font-size: 2em;
-  }
-
-  .subtitle {
-    font-size: 1em;
-  }
-
-  .container {
-    padding: 15px;
-    margin: 10px;
-  }
-
-  section h2 {
-    font-size: 1.2em;
-  }
-
-  .floating-flag {
-    width: 32px;
-    top: 8px;
-    right: 8px;
-  }
+  border-radius: 4px;
 }
