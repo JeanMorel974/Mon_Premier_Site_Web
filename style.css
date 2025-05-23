@@ -1,7 +1,5 @@
-/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap');
 
-/* Global Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,33 +10,29 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: #f0f8ff;
   color: #333;
-  min-height: 100vh;
+}
+
+/* Section visible dès l'ouverture */
+.intro {
+  height: 100vh;
+  max-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  overflow: hidden;
+  padding: 20px;
+  background-color: #ffffff;
+  position: relative;
 }
 
-/* Hero Section */
-.hero {
-  background: white;
-  padding: 30px 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 90%;
-}
-
-/* Title */
 .title {
   font-family: 'Lobster', cursive;
-  font-size: 2.2em;
+  font-size: 2.5em;
   color: #0077cc;
   margin-bottom: 20px;
 }
 
-/* CTA Group */
 .cta-group {
   display: flex;
   flex-direction: column;
@@ -50,12 +44,11 @@ body {
 .linkedin-link {
   background-color: #0077cc;
   color: white;
-  padding: 10px 16px;
+  padding: 10px 20px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
   transition: background-color 0.3s ease;
-  max-width: 90%;
 }
 
 .cv-button:hover,
@@ -63,7 +56,6 @@ body {
   background-color: #005fa3;
 }
 
-/* QR Code */
 .qr-code img {
   width: 120px;
   height: auto;
@@ -71,7 +63,7 @@ body {
   border-radius: 8px;
 }
 
-/* Floating flag */
+/* Drapeau flottant */
 .floating-flag {
   position: absolute;
   top: 10px;
@@ -82,7 +74,74 @@ body {
 
 .floating-flag img {
   width: 100%;
-  height: auto;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+/* Contenu principal du CV */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #0077cc;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Responsive ajustements */
+@media (max-width: 600px) {
+  .title {
+    font-size: 2em;
+  }
+
+  .cv-button, .linkedin-link {
+    font-size: 0.95em;
+    padding: 10px;
+  }
+
+  .qr-code img {
+    width: 100px;
+  }
+
+  .container {
+    padding: 20px 15px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
 }
