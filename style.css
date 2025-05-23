@@ -1,153 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans:wght@400;600&display=swap');
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+/* Global Styles */
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #f0f8ff;
+  background-color: #f9f9f9;
   color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Style pour texte important */
-.important {
-  color: #0077cc;
-  font-weight: bold;
-}
-
-/* Section visible dès l'ouverture */
-.intro {
-  height: 100vh;
-  max-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
   padding: 20px;
-  background-color: #ffffff;
-  position: relative;
-}
-
-.title {
-  font-family: 'Lobster', cursive;
-  font-size: 2.5em;
-  color: #0077cc;
-  margin-bottom: 20px;
-}
-
-.cta-group {
   display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
   flex-direction: column;
-  gap: 15px;
-  align-items: center;
 }
 
-.cv-button,
-.linkedin-link {
-  background-color: #0077cc;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-  text-decoration: none;
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+/* Columns */
+.column {
+  flex: 1 1 400px;
+  min-width: 300px;
+  padding: 20px;
+}
+
+/* Titre principal */
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.2em;
+  color: #0000ff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-style: normal;
+  white-space: nowrap;
+}
+
+/* Sous-titres */
+h2, h3 {
+  color: #0000ff;
+}
+
+/* Texte important */
+.important {
   font-weight: 600;
+  color: #0000ff;
+}
+
+/* Listes */
+ul {
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 8px;
+}
+
+/* CV Link */
+.cv-top-center {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.cv-link {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #0000ff;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
   transition: background-color 0.3s ease;
 }
-
-.cv-button:hover,
-.linkedin-link:hover {
-  background-color: #005fa3;
+.cv-link:hover {
+  background-color: #0000cc;
 }
 
-.qr-code img {
-  width: 120px;
-  height: auto;
-  border: 2px solid #0077cc;
+/* Highlight box */
+.highlight-box {
+  background-color: #e6e6ff;
+  border-left: 5px solid #0000ff;
+  padding: 15px;
+  margin: 20px 0;
   border-radius: 8px;
 }
 
 /* Drapeau flottant */
 .floating-flag {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 36px;
-  z-index: 1000;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
 }
-
 .floating-flag img {
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  width: 32px;
+  height: auto;
 }
 
-/* Contenu principal du CV */
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px 20px;
-  background-color: #fff;
+/* Bouton haut de page */
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 18px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #0000ff;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
+#topBtn:hover {
+  background-color: #0000cc;
 }
 
-section {
-  margin-bottom: 40px;
+/* Section QR/LinkedIn */
+.qr-linkedin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
 }
 
-h2 {
-  color: #0077cc;
-  margin-bottom: 10px;
-  font-size: 1.4em;
+.qr-code img,
+#qrcode canvas {
+  max-width: 150px;
+  height: auto;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-ul li {
-  margin-bottom: 8px;
-}
-
-a {
-  color: #0077cc;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 0.9em;
-  color: #555;
-}
-
-/* Responsive ajustements */
-@media (max-width: 600px) {
-  .title {
-    font-size: 2em;
-  }
-
-  .cv-button, .linkedin-link {
-    font-size: 0.95em;
-    padding: 10px;
-  }
-
-  .qr-code img {
-    width: 100px;
-  }
-
-  .container {
-    padding: 20px 15px;
-  }
-
-  h2 {
-    font-size: 1.2em;
-  }
+.linkedin-widget {
+  min-width: 200px;
 }
