@@ -17,127 +17,23 @@
   </script>
 
   <style>
-    body {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background: #ffffff;
-      color: #333;
-    }
-
-    .important {
-      color: #0077cc;
-      font-weight: bold;
-    }
-
-    .intro {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 20px;
-    }
-
     .intro h1 {
       font-family: 'Open Sans', sans-serif;
       font-size: 2.2em;
       font-weight: bold;
+      font-style: normal;
       color: #0077cc;
       margin-bottom: 30px;
-    }
-
-    .cv-button {
-      background-color: #0077cc;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-bottom: 30px;
-      transition: background-color 0.3s;
-    }
-
-    .cv-button:hover {
-      background-color: #005fa3;
-    }
-
-    .info-row {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-
-    .linkedin-widget,
-    .qr-code {
-      min-width: 260px;
-    }
-
-    .floating-flag {
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      width: 36px;
-      z-index: 1000;
-    }
-
-    .floating-flag img {
-      width: 100%;
-      border-radius: 4px;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    h2 {
-      color: #0077cc;
-      margin-top: 40px;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    ul li {
-      margin-bottom: 8px;
-    }
-
-    a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 768px) {
-      .info-row {
-        flex-direction: column;
-        gap: 20px;
-      }
-
-      .intro h1 {
-        font-size: 1.8em;
-      }
-
-      .cv-button {
-        font-size: 0.95em;
-      }
     }
   </style>
 </head>
+
 <body>
   <a href="index-en.html" class="floating-flag" title="Switch to English">
     <img src="https://flagcdn.com/gb.svg" alt="English" />
   </a>
 
+  <!-- SECTION INTRO -->
   <section class="intro">
     <h1>Curriculum Vitæ Infirmier Jean MOREL</h1>
 
@@ -164,26 +60,34 @@
     </div>
   </section>
 
+  <!-- CONTENU DU CV -->
   <div class="container">
     <section>
       <h2>À propos de moi</h2>
-      <p>Je suis <span class="important">Jean MOREL</span>, infirmier militaire depuis <span class="important">25 ans</span>, aujourd’hui en reconversion dans le domaine du <span class="important">développement web</span> et du <span class="important">numérique en santé</span>.</p>
-      <p>Originaire de <span class="important">La Réunion</span>, reconnu <span class="important">travailleur handicapé</span>, je souhaite mettre mes compétences au service de la fonction publique dans un emploi réservé adapté.</p>
+      <p><span class="important">Jean MOREL</span>, infirmier militaire avec plus de <span class="important">25 ans</span> de service au sein du <span class="important">Service de Santé des Armées</span>, engagé dans une reconversion professionnelle dans le <span class="important">numérique en santé</span> et le <span class="important">développement web</span>.</p>
+      <p>Je suis reconnu <span class="important">travailleur handicapé</span> et motivé pour occuper un <span class="important">emploi réservé</span> dans la <span class="important">fonction publique à La Réunion</span>.</p>
     </section>
 
     <section>
-      <h2>Expériences professionnelles</h2>
+      <h2>Différents postes Infirmier occupés :</h2>
       <ul>
-        <li><strong>2024 - aujourd'hui :</strong> Reconversion en <span class="important">développement web</span></li>
-        <li><strong>1999 - 2024 :</strong> Infirmier militaire – <span class="important">Service de Santé des Armées</span></li>
+        <li><span class="important">Infirmier militaire</span> – Marine nationale, Armée de Terre, Armée de l’air</li>
+        <li>En unité opérationnelle, à bord de navires, en campagne, en hôpital</li>
+        <li><span class="important">Infirmier sapeur-pompier volontaire</span> – SAMU 69</li>
+        <li>Évacuations sanitaires (MORPHEE)</li>
+        <li><span class="important">Référent hémovigilance</span>, <span class="important">Technicien en soins hyperbares</span></li>
+        <li>Infirmier organisateur de l’accueil (I.O.A.) aux urgences</li>
       </ul>
     </section>
 
     <section>
-      <h2>Formations</h2>
+      <h2>Postes possibles d’infirmier adapté à mon handicap :</h2>
       <ul>
-        <li><strong>2024 :</strong> Autoformation HTML, CSS, JavaScript, Python</li>
-        <li><strong>1996 - 1999 :</strong> <span class="important">Diplôme d’État Infirmier</span> – Armée Française</li>
+        <li>Poste administratif ou de coordination</li>
+        <li>Infirmier en centre médico-social ou scolaire</li>
+        <li>Éducation thérapeutique du patient</li>
+        <li>Support en télémédecine ou santé connectée</li>
+        <li>Participation à des projets numériques en santé</li>
       </ul>
     </section>
 
@@ -201,6 +105,7 @@
     </section>
   </div>
 
+  <!-- QR Code Script -->
   <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
   <script>
     const qrCode = new QRCodeStyling({
