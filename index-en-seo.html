@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jean MOREL - Military Nurse | Reserved Job | Reunion Island</title>
 
-  <!-- SEO Tags -->
+  <!-- SEO -->
   <meta name="description" content="Official online resume of Jean MOREL, a military nurse with 25 years of service, seeking a reserved public service position in Reunion Island.">
   <meta name="keywords" content="Jean Morel, Military Nurse, Reserved Job, Public Service, Reunion Island, SSA, RQTH, Hyperbaric, CORSIC, career transition">
   <meta name="author" content="Jean MOREL" />
@@ -18,31 +18,9 @@
   <meta property="og:image" content="https://jeanmorel974.github.io/Mon_Premier_Site_Web/Images/photo-profile.jpg">
 
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
 
   <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    @media (min-width: 768px) {
-      .container {
-        flex-direction: row;
-        gap: 20px;
-      }
-    }
-
     h1 {
       font-family: 'Roboto', sans-serif;
       font-size: 2.2em;
@@ -50,13 +28,6 @@
       text-align: center;
       font-style: normal;
       margin-top: 20px;
-    }
-
-    .visitor-counter {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #777;
     }
 
     .floating-flag {
@@ -78,7 +49,7 @@
         <a href="Images/CvJeanMorel-en.pdf" target="_blank" class="cv-link">📄 Download my CV (PDF)</a>
       </div>
 
-      <h1>Curriculum Vitae – Nurse Jean MOREL</h1>
+      <h1>Curriculum Vitae Jean MOREL</h1>
 
       <div class="qr-linkedin">
         <div class="linkedin-widget">
@@ -127,32 +98,24 @@
       <p>I am undergoing a medical discharge and career transition due to service-related injuries.</p>
       <p>I hold the <span class="important">RQTH disability recognition</span>, the <span class="important">Title of National Recognition</span>, and have the <span class="important">Employment Obligation</span>. I am looking for a nursing position adapted to my situation under the Reserved Jobs for Defense program.</p>
 
-      <h2>Nursing Positions Held:</h2>
+      <h2>Key Skills</h2>
       <ul>
-        <li><span class="important">French Navy</span> – Hyperbaric nurse, Class II Mention C</li>
-        <li><span class="important">Emergency Services</span> – 4 years</li>
-        <li><span class="important">Specialized Surgery</span> – 3 years</li>
-        <li><span class="important">General Surgery</span> – 2 years</li>
-        <li><span class="important">Air and Space Force Nurse</span> – 2 years</li>
-        <li><span class="important">Gendarmerie Medical Unit Nurse</span> – 3 years</li>
-        <li><span class="important">Volunteer Firefighter Nurse (ISPV) – SDIS69</span> – 1.5 years</li>
-        <li><span class="important">Army</span> – 7 years in hospitals and external operations</li>
+        <li><span class="important">Triage Nurse (I.O.A.)</span></li>
+        <li><span class="important">Hyperbaric Care Technician</span></li>
+        <li><span class="important">Hemovigilance Referent</span></li>
+        <li><span class="important">Air Medical Evacuation (MORPHEE)</span></li>
       </ul>
 
-      <h2>Positions Considered (adapted to my disability):</h2>
+      <h2>Languages</h2>
       <ul>
-        <li>Hyperbaric nurse at CHU South site</li>
-        <li>Medical Data Security Manager (CORSIC)</li>
-        <li>IT installation and monitoring technician</li>
-        <li>IT resource coordinator, support and maintenance</li>
-        <li>Public health surveillance and epidemiology officer</li>
-        <li>Administrative and office-based healthcare roles</li>
+        <li>French (including Reunion Creole)</li>
+        <li>English – Intermediate</li>
       </ul>
     </div>
   </div>
 
   <div class="visitor-counter">
-    Visitor count: <img src="https://hitwebcounter.com/counter/counter.php?page=1234567&style=0006&nbdigits=5&type=page&initCount=0" title="Visitor count" alt="web counter" border="0" />
+    Visitor count: <img src="https://hitwebcounter.com/counter/counter.php?page=1234567&style=0006&nbdigits=5&type=page&initCount=0" alt="web counter" border="0" />
   </div>
 
   <button onclick="scrollToTop()" id="topBtn" title="Back to Top">↑</button>
@@ -167,21 +130,13 @@
     const qrCode = new QRCodeStyling({
       width: 240,
       height: 240,
-      data: "https://jeanmorel974.github.io/Mon_Premier_Site_Web/Images/CvJeanMorel-en.pdf",
-      dotsOptions: {
-        color: "blue",
-        type: "rounded"
-      },
-      backgroundOptions: {
-        color: "#ffffff"
-      },
-      imageOptions: {
-        crossOrigin: "anonymous",
-        margin: 10
-      }
+      data: "Images/CvJeanMorel-en.pdf",
+      dotsOptions: { color: "blue", type: "rounded" },
+      backgroundOptions: { color: "#ffffff" },
+      imageOptions: { crossOrigin: "anonymous", margin: 10 }
     });
     qrCode.append(document.getElementById("qrcode"));
   </script>
-  <script type="text/javascript" defer src="https://platform.linkedin.com/badges/js/profile.js"></script>
+  <script type="text/javascript" async src="https://platform.linkedin.com/badges/js/profile.js"></script>
 </body>
 </html>
