@@ -1,5 +1,5 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans:wght@400;600&display=swap');
 
 /* Global Styles */
 body {
@@ -8,8 +8,10 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* Container for layout */
 .container {
   max-width: 1200px;
   margin: 40px auto;
@@ -20,25 +22,32 @@ body {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   border-radius: 12px;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
 }
 
 /* Column styles */
 .column {
   flex: 1 1 400px;
   min-width: 300px;
-}
-
-.left-column,
-.right-column {
   padding: 20px;
 }
 
-/* Headings */
+/* Titles */
 h1 {
-  font-family: 'Lobster', cursive;
-  font-size: 2em;
-  color: #005B99;
-  margin-top: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.2em;
+  color: #0000ff; /* bleu vif identique au QR code */
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-style: normal;
 }
 
 h2, h3 {
@@ -60,7 +69,7 @@ li {
   margin-bottom: 8px;
 }
 
-/* CV Link Button (top centered) */
+/* CV Link */
 .cv-top-center {
   text-align: center;
   margin-top: 10px;
