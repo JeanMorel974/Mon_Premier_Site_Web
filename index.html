@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Curriculum Vitæ Infirmier Jean MOREL</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KWCFXT21W9"></script>
@@ -24,20 +24,25 @@
       color: #333;
     }
 
+    .important {
+      color: #0077cc;
+      font-weight: bold;
+    }
+
     .intro {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
       text-align: center;
       padding: 20px;
-      box-sizing: border-box;
     }
 
     .intro h1 {
-      font-family: 'Lobster', cursive;
+      font-family: 'Open Sans', sans-serif;
       font-size: 2.2em;
+      font-weight: bold;
       color: #0077cc;
       margin-bottom: 30px;
     }
@@ -83,17 +88,52 @@
       border-radius: 4px;
     }
 
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      color: #0077cc;
+      margin-top: 40px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 768px) {
       .info-row {
         flex-direction: column;
         gap: 20px;
       }
+
+      .intro h1 {
+        font-size: 1.8em;
+      }
+
+      .cv-button {
+        font-size: 0.95em;
+      }
     }
   </style>
 </head>
-
 <body>
-  <!-- Drapeau pour switch de langue -->
   <a href="index-en.html" class="floating-flag" title="Switch to English">
     <img src="https://flagcdn.com/gb.svg" alt="English" />
   </a>
@@ -124,7 +164,43 @@
     </div>
   </section>
 
-  <!-- Scripts -->
+  <div class="container">
+    <section>
+      <h2>À propos de moi</h2>
+      <p>Je suis <span class="important">Jean MOREL</span>, infirmier militaire depuis <span class="important">25 ans</span>, aujourd’hui en reconversion dans le domaine du <span class="important">développement web</span> et du <span class="important">numérique en santé</span>.</p>
+      <p>Originaire de <span class="important">La Réunion</span>, reconnu <span class="important">travailleur handicapé</span>, je souhaite mettre mes compétences au service de la fonction publique dans un emploi réservé adapté.</p>
+    </section>
+
+    <section>
+      <h2>Expériences professionnelles</h2>
+      <ul>
+        <li><strong>2024 - aujourd'hui :</strong> Reconversion en <span class="important">développement web</span></li>
+        <li><strong>1999 - 2024 :</strong> Infirmier militaire – <span class="important">Service de Santé des Armées</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Formations</h2>
+      <ul>
+        <li><strong>2024 :</strong> Autoformation HTML, CSS, JavaScript, Python</li>
+        <li><strong>1996 - 1999 :</strong> <span class="important">Diplôme d’État Infirmier</span> – Armée Française</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Me contacter</h2>
+      <ul>
+        <li>Email : <span class="important">jeanmorel@icloud.com</span></li>
+        <li>Téléphone : <span class="important">06 93 97 07 84</span></li>
+        <li>LinkedIn :
+          <a href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense" target="_blank">
+            Voir mon profil LinkedIn
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
   <script>
     const qrCode = new QRCodeStyling({
