@@ -3,30 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jean MOREL - Resume & Presentation</title>
+  <title>Curriculum Vitae – Military Nurse Jean MOREL</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KWCFXT21W9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KWCFXT21W9');
+  </script>
+
+  <style>
+    .intro h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2.2em;
+      font-weight: bold;
+      font-style: normal;
+      color: #0077cc;
+      margin-bottom: 30px;
+    }
+  </style>
 </head>
+
 <body>
-  <!-- Floating French flag -->
-  <a href="index.html" class="flag floating-flag" title="Voir en français">
+  <a href="index.html" class="floating-flag" title="Voir en français">
     <img src="https://flagcdn.com/fr.svg" alt="Français" />
   </a>
 
-  <div class="hero">
-    <h1 class="title">Jean MOREL</h1>
+  <!-- Intro Section -->
+  <section class="intro">
+    <h1>Curriculum Vitae – Military Nurse Jean MOREL</h1>
 
-    <div class="cta-group">
-      <a href="Images/CV-JeanMorel.pdf" class="cv-button" download>Download my CV (PDF)</a>
+    <a href="Images/CV-JeanMorel.pdf" class="cv-button" download>📄 Download My CV (PDF)</a>
 
-      <a href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense" target="_blank" class="linkedin-link">
-        View my LinkedIn profile
-      </a>
-
-      <div class="qr-code">
-        <img src="Images/qrcode_linkedin.png" alt="LinkedIn QR Code" />
+    <div class="info-row">
+      <div class="linkedin-widget">
+        <div class="LI-profile-badge"
+             data-locale="en_US"
+             data-size="medium"
+             data-theme="light"
+             data-type="horizontal"
+             data-vanity="jean-morel-infirmier-reconversion-emploi-reserve-defense"
+             data-version="v1">
+          <a class="LI-simple-link"
+             href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense"
+             target="_blank">
+            Jean MOREL – LinkedIn
+          </a>
+        </div>
       </div>
+
+      <div class="qr-code" id="qrcode"></div>
     </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container">
+    <section>
+      <h2>About Me</h2>
+      <p><span class="important">Jean MOREL</span>, a military nurse with over <span class="important">25 years of service</span> in the <span class="important">French Military Health Service</span>, now retraining in <span class="important">web development</span> and <span class="important">digital health</span>.</p>
+      <p>Originally from <span class="important">Reunion Island</span> and officially recognized as disabled, I am seeking a <span class="important">reserved job in the public sector</span>.</p>
+    </section>
+
+    <section>
+      <h2>Previous Nursing Roles</h2>
+      <ul>
+        <li><span class="important">Military nurse</span> – Navy, Army, Air Force</li>
+        <li>Operational units, onboard ships, hospitals, field deployments</li>
+        <li><span class="important">Volunteer firefighter nurse</span> – SAMU 69</li>
+        <li>Air medical evacuations (MORPHEE)</li>
+        <li><span class="important">Hemovigilance officer</span>, <span class="important">Hyperbaric care technician</span>, <span class="important">Triage nurse</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Suitable Positions Given My Disability</h2>
+      <ul>
+        <li>Administrative or coordination roles</li>
+        <li>Nurse in schools or medico-social centers</li>
+        <li>Patient education</li>
+        <li>Telemedicine and e-health support</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact Me</h2>
+      <ul>
+        <li>Email: <span class="important">jeanmorel@icloud.com</span></li>
+        <li>Phone: <span class="important">+262 693 97 07 84</span></li>
+        <li>LinkedIn:
+          <a href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense" target="_blank">
+            View my LinkedIn profile
+          </a>
+        </li>
+      </ul>
+    </section>
   </div>
+
+  <!-- QR Code script -->
+  <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+  <script>
+    const qrCode = new QRCodeStyling({
+      width: 140,
+      height: 140,
+      data: "https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense",
+      dotsOptions: {
+        color: "#0077cc",
+        type: "rounded"
+      },
+      backgroundOptions: {
+        color: "#ffffff"
+      }
+    });
+    qrCode.append(document.getElementById("qrcode"));
+  </script>
+  <script async type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js"></script>
 </body>
 </html>
