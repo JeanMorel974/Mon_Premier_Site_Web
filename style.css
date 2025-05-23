@@ -1,158 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans:wght@400;600&display=swap');
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap');
 
 /* Global Styles */
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #f9f9f9;
+  line-height: 1.6;
   color: #333;
+  background-color: #f9f9f9;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /* Container */
 .container {
-  max-width: 1200px;
-  margin: 40px auto;
+  max-width: 1000px;
+  margin: auto;
   padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 12px;
-  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-@media (min-width: 768px) {
-  .container {
-    flex-direction: row;
-  }
-}
-
-/* Columns */
-.column {
-  flex: 1 1 400px;
-  min-width: 300px;
-  padding: 20px;
-}
-
-/* Titre principal */
-h1 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 2.2em;
-  color: #0000ff;
+/* Header */
+.title {
+  font-family: 'Lobster', cursive;
+  font-size: 2.5em;
+  margin: 0 0 10px;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-style: normal;
-  white-space: nowrap;
 }
 
-/* Sous-titres */
-h2, h3 {
-  color: #0000ff;
+.subtitle {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 30px;
 }
 
-/* Texte important */
-.important {
-  font-weight: 600;
-  color: #0000ff;
+/* Sections */
+section {
+  margin-bottom: 30px;
 }
 
-/* Listes */
+section h2 {
+  color: #0077cc;
+  border-bottom: 2px solid #0077cc;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
 ul {
-  padding-left: 20px;
+  list-style-type: none;
+  padding-left: 0;
 }
-li {
+
+ul li {
   margin-bottom: 8px;
 }
 
-/* CV Link */
-.cv-top-center {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-.cv-link {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #0000ff;
-  color: white;
-  font-weight: 600;
+/* Download Link */
+a {
+  color: #0077cc;
   text-decoration: none;
-  border-radius: 8px;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-.cv-link:hover {
-  background-color: #0000cc;
 }
 
-/* Highlight box */
-.highlight-box {
-  background-color: #e6e6ff;
-  border-left: 5px solid #0000ff;
-  padding: 15px;
-  margin: 20px 0;
-  border-radius: 8px;
+a:hover {
+  text-decoration: underline;
 }
 
-/* Drapeau flottant */
+/* Floating flag */
 .floating-flag {
   position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 999;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  z-index: 1000;
 }
+
 .floating-flag img {
-  width: 32px;
+  width: 100%;
   height: auto;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
-/* Bouton haut de page */
-#topBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 18px;
-  padding: 10px 15px;
-  border: none;
-  background-color: #0000ff;
-  color: white;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 999;
-  transition: background-color 0.3s ease;
-}
-#topBtn:hover {
-  background-color: #0000cc;
+/* Footer */
+footer {
+  font-size: 0.85em;
+  color: #666;
 }
 
-/* Section QR/LinkedIn */
-.qr-linkedin {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
-  margin: 30px 0;
+/* Responsive Design */
+@media (max-width: 600px) {
+  .title {
+    font-size: 2em;
+  }
+
+  .subtitle {
+    font-size: 1em;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  section h2 {
+    font-size: 1.2em;
+  }
+
+  .floating-flag {
+    width: 32px;
+    top: 8px;
+    right: 8px;
+  }
 }
-
-.qr-code img,
-#qrcode canvas {
-  max-width: 150px;
-  height: auto;
-}
-
-.linkedin-widget {
-  min-width: 200px;
-}
-"""
-
-# Écriture dans un fichier
-style_file_path = Path("/mnt/data/style.css")
-style_file_path.write_text(style_css_content.strip(), encoding='utf-8')
-
-style_file_path.name
