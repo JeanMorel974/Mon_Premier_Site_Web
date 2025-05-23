@@ -1,4 +1,3 @@
-/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
 * {
@@ -33,7 +32,7 @@ body {
   border-radius: 4px;
 }
 
-/* Section intro (sans scroll) */
+/* Section d’intro sans scroll */
 .intro {
   display: flex;
   flex-direction: column;
@@ -47,12 +46,13 @@ body {
 .intro h1 {
   font-size: 2.2em;
   font-weight: bold;
+  font-style: normal;
   color: #0077cc;
   margin-bottom: 30px;
 }
 
 /* Bouton CV */
-.cv-button {
+.cv-button, .cv-link {
   background-color: #0077cc;
   color: white;
   padding: 10px 20px;
@@ -63,11 +63,11 @@ body {
   transition: background-color 0.3s;
 }
 
-.cv-button:hover {
+.cv-button:hover, .cv-link:hover {
   background-color: #005fa3;
 }
 
-/* Ligne d'infos (widget + QR) */
+/* Ligne info : QR + LinkedIn */
 .info-row {
   display: flex;
   justify-content: center;
@@ -81,12 +81,16 @@ body {
   min-width: 260px;
 }
 
-/* Contenu principal */
+/* Section principale */
 .container {
   max-width: 1000px;
   margin: auto;
   padding: 40px 20px;
   background-color: #fff;
+}
+
+section {
+  margin-bottom: 40px;
 }
 
 h2 {
@@ -114,7 +118,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Responsive mobile */
+/* Responsive pour mobile */
 @media (max-width: 768px) {
   .info-row {
     flex-direction: column;
@@ -125,7 +129,7 @@ a:hover {
     font-size: 1.8em;
   }
 
-  .cv-button {
+  .cv-button, .cv-link {
     font-size: 0.95em;
   }
 
