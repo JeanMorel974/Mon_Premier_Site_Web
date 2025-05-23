@@ -4,8 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Curriculum Vitae – Military Nurse Jean MOREL</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- SEO -->
+  <meta name="description" content="Online CV of Jean MOREL, military nurse with 25 years of service, seeking a reserved public sector job in Reunion Island.">
+  <meta name="keywords" content="Jean Morel, Military Nurse, Public Sector, Reserved Job, Reunion Island, Health, Disability, Veteran, E-health">
+  <meta name="author" content="Jean MOREL" />
+  <meta property="og:title" content="Jean MOREL – Military Nurse | Reunion Island">
+  <meta property="og:description" content="25 years of service in the Military Health Service. Seeking a reserved job in the public sector in Reunion Island.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jeanmorel974.github.io/Mon_Premier_Site_Web/index-en-seo.html">
+  <meta property="og:image" content="https://jeanmorel974.github.io/Mon_Premier_Site_Web/Images/photo-profile.jpg">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KWCFXT21W9"></script>
@@ -16,6 +24,9 @@
     gtag('config', 'G-KWCFXT21W9');
   </script>
 
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
   <style>
     .intro h1 {
       font-family: 'Open Sans', sans-serif;
@@ -25,15 +36,22 @@
       color: #0077cc;
       margin-bottom: 30px;
     }
+    .visitor-counter {
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+      padding: 20px 0;
+    }
   </style>
 </head>
 
 <body>
-  <a href="index.html" class="floating-flag" title="Voir en français">
+  <!-- Language switch -->
+  <a href="index-seo.html" class="floating-flag" title="Voir en français">
     <img src="https://flagcdn.com/fr.svg" alt="Français" />
   </a>
 
-  <!-- Intro Section -->
+  <!-- INTRO -->
   <section class="intro">
     <h1>Curriculum Vitae – Military Nurse Jean MOREL</h1>
 
@@ -55,37 +73,36 @@
           </a>
         </div>
       </div>
-
       <div class="qr-code" id="qrcode"></div>
     </div>
   </section>
 
-  <!-- Main Content -->
+  <!-- CONTENT -->
   <div class="container">
     <section>
       <h2>About Me</h2>
-      <p><span class="important">Jean MOREL</span>, a military nurse with over <span class="important">25 years of service</span> in the <span class="important">French Military Health Service</span>, now retraining in <span class="important">web development</span> and <span class="important">digital health</span>.</p>
-      <p>Originally from <span class="important">Reunion Island</span> and officially recognized as disabled, I am seeking a <span class="important">reserved job in the public sector</span>.</p>
+      <p><span class="important">Jean MOREL</span>, a military nurse with over <span class="important">25 years of service</span> in the <span class="important">French Military Health Service</span>. I am now retraining in <span class="important">web development</span> and <span class="important">digital health</span>.</p>
+      <p>Based in <span class="important">Reunion Island</span> and officially recognized with a disability, I am looking for a <span class="important">reserved position in the public sector</span>.</p>
     </section>
 
     <section>
       <h2>Previous Nursing Roles</h2>
       <ul>
         <li><span class="important">Military nurse</span> – Navy, Army, Air Force</li>
-        <li>Operational units, onboard ships, hospitals, field deployments</li>
+        <li>Operations on naval and land-based units, in hospitals, and field campaigns</li>
         <li><span class="important">Volunteer firefighter nurse</span> – SAMU 69</li>
         <li>Air medical evacuations (MORPHEE)</li>
-        <li><span class="important">Hemovigilance officer</span>, <span class="important">Hyperbaric care technician</span>, <span class="important">Triage nurse</span></li>
+        <li><span class="important">Hemovigilance coordinator</span>, <span class="important">Hyperbaric technician</span>, <span class="important">Triage nurse</span></li>
       </ul>
     </section>
 
     <section>
       <h2>Suitable Positions Given My Disability</h2>
       <ul>
-        <li>Administrative or coordination roles</li>
-        <li>Nurse in schools or medico-social centers</li>
-        <li>Patient education</li>
-        <li>Telemedicine and e-health support</li>
+        <li>Administrative or coordination nurse</li>
+        <li>School or social healthcare nurse</li>
+        <li>Patient education roles</li>
+        <li>Telemedicine / digital healthcare roles</li>
       </ul>
     </section>
 
@@ -103,7 +120,12 @@
     </section>
   </div>
 
-  <!-- QR Code script -->
+  <!-- Footer / Google Analytics display -->
+  <div class="visitor-counter">
+    Number of visitors (via Google Analytics)
+  </div>
+
+  <!-- QR Code -->
   <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
   <script>
     const qrCode = new QRCodeStyling({
