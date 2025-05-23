@@ -12,6 +12,12 @@ body {
   color: #333;
 }
 
+/* Style pour texte important */
+.important {
+  color: #0077cc;
+  font-weight: bold;
+}
+
 /* Section visible dès l'ouverture */
 .intro {
   height: 100vh;
