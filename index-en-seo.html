@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Curriculum Vitae – Military Nurse Jean MOREL</title>
+  <title>Nurse Curriculum Vitae – Jean MOREL</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
 
@@ -21,23 +21,80 @@
       font-family: 'Open Sans', sans-serif;
       font-size: 2.2em;
       font-weight: bold;
-      font-style: normal;
       color: #0077cc;
       margin-bottom: 30px;
+    }
+
+    .cv-button {
+      display: inline-block;
+      margin: 15px 0;
+      padding: 10px 20px;
+      font-weight: bold;
+      background-color: #0077cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .cv-button:hover {
+      background-color: #005fa3;
+    }
+
+    .info-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .qr-code {
+      width: 140px;
+      height: 140px;
+    }
+
+    .floating-flag {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 32px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #0077cc;
+    }
+
+    .important {
+      font-weight: bold;
+      color: #005fa3;
     }
   </style>
 </head>
 
 <body>
-  <a href="index.html" class="floating-flag" title="Voir en français">
+  <!-- French flag -->
+  <a href="index.html" class="floating-flag" title="Passer en français">
     <img src="https://flagcdn.com/fr.svg" alt="Français" />
   </a>
 
-  <!-- Intro Section -->
+  <!-- INTRO SECTION -->
   <section class="intro">
-    <h1>Curriculum Vitae – Military Nurse Jean MOREL</h1>
+    <h1>Nurse Curriculum Vitae – Jean MOREL</h1>
 
-    <a href="Images/CV-JeanMorel.pdf" class="cv-button" download>📄 Download My CV (PDF)</a>
+    <a href="https://jeanmorel974.github.io/Mon_Premier_Site_Web/Images/CvJeanMorel-en.pdf" class="cv-button" download>
+      Download my CV (PDF)
+    </a>
 
     <div class="info-row">
       <div class="linkedin-widget">
@@ -60,32 +117,34 @@
     </div>
   </section>
 
-  <!-- Main Content -->
+  <!-- CV CONTENT -->
   <div class="container">
     <section>
       <h2>About Me</h2>
-      <p><span class="important">Jean MOREL</span>, a military nurse with over <span class="important">25 years of service</span> in the <span class="important">French Military Health Service</span>, now retraining in <span class="important">web development</span> and <span class="important">digital health</span>.</p>
-      <p>Originally from <span class="important">Reunion Island</span> and officially recognized as disabled, I am seeking a <span class="important">reserved job in the public sector</span>.</p>
+      <p><span class="important">Jean MOREL</span>, military nurse with over <span class="important">25 years</span> of service in the <span class="important">French Army Health Service</span>, currently transitioning to <span class="important">digital health</span> and <span class="important">web development</span>.</p>
+      <p>I am recognized as a <span class="important">disabled worker</span> and highly motivated to apply for a <span class="important">Defense Reserved Position</span> within the <span class="important">Public Service in Reunion Island</span>.</p>
     </section>
 
     <section>
-      <h2>Previous Nursing Roles</h2>
+      <h2>Previous Nursing Positions:</h2>
       <ul>
         <li><span class="important">Military nurse</span> – Navy, Army, Air Force</li>
-        <li>Operational units, onboard ships, hospitals, field deployments</li>
+        <li>Operational units, ships, field missions, hospitals</li>
         <li><span class="important">Volunteer firefighter nurse</span> – SAMU 69</li>
-        <li>Air medical evacuations (MORPHEE)</li>
-        <li><span class="important">Hemovigilance officer</span>, <span class="important">Hyperbaric care technician</span>, <span class="important">Triage nurse</span></li>
+        <li>Medical evacuations (MORPHEE)</li>
+        <li><span class="important">Hemovigilance officer</span>, <span class="important">Hyperbaric technician</span></li>
+        <li>Emergency reception triage nurse (I.O.A.)</li>
       </ul>
     </section>
 
     <section>
-      <h2>Suitable Positions Given My Disability</h2>
+      <h2>Suitable Positions Considering My Disability:</h2>
       <ul>
-        <li>Administrative or coordination roles</li>
-        <li>Nurse in schools or medico-social centers</li>
-        <li>Patient education</li>
-        <li>Telemedicine and e-health support</li>
+        <li>Administrative or coordination position</li>
+        <li>School or community health nurse</li>
+        <li>Therapeutic patient education</li>
+        <li>Telemedicine and connected health support</li>
+        <li>Participation in digital health projects</li>
       </ul>
     </section>
 
@@ -93,7 +152,7 @@
       <h2>Contact Me</h2>
       <ul>
         <li>Email: <span class="important">jeanmorel@icloud.com</span></li>
-        <li>Phone: <span class="important">+262 693 97 07 84</span></li>
+        <li>Phone: <span class="important">+33 6 93 97 07 84</span></li>
         <li>LinkedIn:
           <a href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense" target="_blank">
             View my LinkedIn profile
@@ -103,13 +162,13 @@
     </section>
   </div>
 
-  <!-- QR Code script -->
+  <!-- QR Code Script -->
   <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
   <script>
     const qrCode = new QRCodeStyling({
       width: 140,
       height: 140,
-      data: "https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense",
+      data: "https://jeanmorel974.github.io/Mon_Premier_Site_Web/Images/CvJeanMorel-en.pdf",
       dotsOptions: {
         color: "#0077cc",
         type: "rounded"
@@ -120,6 +179,8 @@
     });
     qrCode.append(document.getElementById("qrcode"));
   </script>
+
+  <!-- LinkedIn Badge Script -->
   <script async type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js"></script>
 </body>
 </html>
