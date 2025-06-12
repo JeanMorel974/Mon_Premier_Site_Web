@@ -1,4 +1,1 @@
-User-agent: *
-Allow: /
-
 Sitemap: https://jeanmorel974.github.io/Mon_Premier_Site_Web/sitemap.xml
