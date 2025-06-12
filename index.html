@@ -21,14 +21,69 @@
       font-family: 'Open Sans', sans-serif;
       font-size: 2.2em;
       font-weight: bold;
-      font-style: normal;
       color: #0077cc;
       margin-bottom: 30px;
+    }
+
+    .cv-button {
+      display: inline-block;
+      margin: 15px 0;
+      padding: 10px 20px;
+      font-weight: bold;
+      background-color: #0077cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .cv-button:hover {
+      background-color: #005fa3;
+    }
+
+    .info-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .qr-code {
+      width: 140px;
+      height: 140px;
+    }
+
+    .floating-flag {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 32px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #0077cc;
+    }
+
+    .important {
+      font-weight: bold;
+      color: #005fa3;
     }
   </style>
 </head>
 
 <body>
+  <!-- Bouton anglais -->
   <a href="index-en.html" class="floating-flag" title="Switch to English">
     <img src="https://flagcdn.com/gb.svg" alt="English" />
   </a>
@@ -37,7 +92,9 @@
   <section class="intro">
     <h1>Curriculum Vitæ Infirmier Jean MOREL</h1>
 
-    <a href="Images/CV-JeanMorel.pdf" class="cv-button" download>Télécharger mon CV (PDF)</a>
+    <a href="https://jeanmorel974.github.io/Mon_Premier_Site_Web/Images/CV-JeanMorel.pdf" class="cv-button" download>
+      Télécharger mon CV (PDF)
+    </a>
 
     <div class="info-row">
       <div class="linkedin-widget">
@@ -122,6 +179,8 @@
     });
     qrCode.append(document.getElementById("qrcode"));
   </script>
+
+  <!-- LinkedIn Badge Script -->
   <script async type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js"></script>
 </body>
 </html>
