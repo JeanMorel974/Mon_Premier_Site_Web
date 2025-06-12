@@ -3,17 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Curriculum Vitae – Military Nurse Jean MOREL</title>
-
-  <!-- SEO -->
-  <meta name="description" content="Online CV of Jean MOREL, military nurse with 25 years of service, seeking a reserved public sector job in Reunion Island.">
-  <meta name="keywords" content="Jean Morel, Military Nurse, Public Sector, Reserved Job, Reunion Island, Health, Disability, Veteran, E-health">
-  <meta name="author" content="Jean MOREL" />
-  <meta property="og:title" content="Jean MOREL – Military Nurse | Reunion Island">
-  <meta property="og:description" content="25 years of service in the Military Health Service. Seeking a reserved job in the public sector in Reunion Island.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://jeanmorel974.github.io/Mon_Premier_Site_Web/index-en-seo.html">
-  <meta property="og:image" content="https://jeanmorel974.github.io/Mon_Premier_Site_Web/Images/photo-profile.jpg">
+  <title>Nurse Curriculum Vitae – Jean MOREL</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KWCFXT21W9"></script>
@@ -24,38 +16,85 @@
     gtag('config', 'G-KWCFXT21W9');
   </script>
 
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
-
   <style>
     .intro h1 {
       font-family: 'Open Sans', sans-serif;
       font-size: 2.2em;
       font-weight: bold;
-      font-style: normal;
       color: #0077cc;
       margin-bottom: 30px;
     }
-    .visitor-counter {
-      text-align: center;
-      font-size: 0.9em;
-      color: #666;
-      padding: 20px 0;
+
+    .cv-button {
+      display: inline-block;
+      margin: 15px 0;
+      padding: 10px 20px;
+      font-weight: bold;
+      background-color: #0077cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .cv-button:hover {
+      background-color: #005fa3;
+    }
+
+    .info-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .qr-code {
+      width: 140px;
+      height: 140px;
+    }
+
+    .floating-flag {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 32px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #0077cc;
+    }
+
+    .important {
+      font-weight: bold;
+      color: #005fa3;
     }
   </style>
 </head>
 
 <body>
-  <!-- Language switch -->
-  <a href="index-seo.html" class="floating-flag" title="Voir en français">
+  <!-- French flag -->
+  <a href="index.html" class="floating-flag" title="Passer en français">
     <img src="https://flagcdn.com/fr.svg" alt="Français" />
   </a>
 
-  <!-- INTRO -->
+  <!-- INTRO SECTION -->
   <section class="intro">
-    <h1>Curriculum Vitae – Military Nurse Jean MOREL</h1>
+    <h1>Nurse Curriculum Vitae – Jean MOREL</h1>
 
-    <a href="Images/CV-JeanMorel.pdf" class="cv-button" download>📄 Download My CV (PDF)</a>
+    <a href="https://jeanmorel974.github.io/Mon_Premier_Site_Web/Images/CV-JeanMorel-EN.pdf" class="cv-button" download>
+      Download my CV (PDF)
+    </a>
 
     <div class="info-row">
       <div class="linkedin-widget">
@@ -73,36 +112,39 @@
           </a>
         </div>
       </div>
+
       <div class="qr-code" id="qrcode"></div>
     </div>
   </section>
 
-  <!-- CONTENT -->
+  <!-- CV CONTENT -->
   <div class="container">
     <section>
       <h2>About Me</h2>
-      <p><span class="important">Jean MOREL</span>, a military nurse with over <span class="important">25 years of service</span> in the <span class="important">French Military Health Service</span>. I am now retraining in <span class="important">web development</span> and <span class="important">digital health</span>.</p>
-      <p>Based in <span class="important">Reunion Island</span> and officially recognized with a disability, I am looking for a <span class="important">reserved position in the public sector</span>.</p>
+      <p><span class="important">Jean MOREL</span>, military nurse with over <span class="important">25 years</span> of service in the <span class="important">French Army Health Service</span>, currently undergoing a professional transition to <span class="important">digital health</span> and <span class="important">web development</span>.</p>
+      <p>I am officially recognized as a <span class="important">disabled worker</span> and motivated to apply for a <span class="important">Defense Reserved Employment</span> within the <span class="important">French Public Service in Reunion Island</span>.</p>
     </section>
 
     <section>
-      <h2>Previous Nursing Roles</h2>
+      <h2>Previous Nursing Roles:</h2>
       <ul>
-        <li><span class="important">Military nurse</span> – Navy, Army, Air Force</li>
-        <li>Operations on naval and land-based units, in hospitals, and field campaigns</li>
+        <li><span class="important">Military nurse</span> – French Navy, Army, and Air Force</li>
+        <li>Field operations, naval missions, campaigns, military hospitals</li>
         <li><span class="important">Volunteer firefighter nurse</span> – SAMU 69</li>
-        <li>Air medical evacuations (MORPHEE)</li>
-        <li><span class="important">Hemovigilance coordinator</span>, <span class="important">Hyperbaric technician</span>, <span class="important">Triage nurse</span></li>
+        <li>Medical evacuations (MORPHEE)</li>
+        <li><span class="important">Hemovigilance referent</span>, <span class="important">Hyperbaric care technician</span></li>
+        <li>Emergency Department Triage Nurse (I.O.A.)</li>
       </ul>
     </section>
 
     <section>
-      <h2>Suitable Positions Given My Disability</h2>
+      <h2>Suitable Positions Based on My Disability:</h2>
       <ul>
-        <li>Administrative or coordination nurse</li>
-        <li>School or social healthcare nurse</li>
-        <li>Patient education roles</li>
-        <li>Telemedicine / digital healthcare roles</li>
+        <li>Administrative or coordination role</li>
+        <li>Nurse in medical-social or school setting</li>
+        <li>Patient therapeutic education</li>
+        <li>Telemedicine or connected health support</li>
+        <li>Digital health project contributor</li>
       </ul>
     </section>
 
@@ -110,7 +152,7 @@
       <h2>Contact Me</h2>
       <ul>
         <li>Email: <span class="important">jeanmorel@icloud.com</span></li>
-        <li>Phone: <span class="important">+262 693 97 07 84</span></li>
+        <li>Phone: <span class="important">+33 6 93 97 07 84</span></li>
         <li>LinkedIn:
           <a href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense" target="_blank">
             View my LinkedIn profile
@@ -120,18 +162,13 @@
     </section>
   </div>
 
-  <!-- Footer / Google Analytics display -->
-  <div class="visitor-counter">
-    Number of visitors (via Google Analytics)
-  </div>
-
-  <!-- QR Code -->
+  <!-- QR Code Script -->
   <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
   <script>
     const qrCode = new QRCodeStyling({
       width: 140,
       height: 140,
-      data: "https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense",
+      data: "https://jeanmorel974.github.io/Mon_Premier_Site_Web/Images/CV-JeanMorel-EN.pdf",
       dotsOptions: {
         color: "#0077cc",
         type: "rounded"
@@ -142,6 +179,8 @@
     });
     qrCode.append(document.getElementById("qrcode"));
   </script>
+
+  <!-- LinkedIn Badge Script -->
   <script async type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js"></script>
 </body>
 </html>
