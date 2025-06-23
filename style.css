@@ -1,143 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+/* Import Google Fonts */ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+{ box-sizing: border-box; margin: 0; padding: 0; }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #ffffff;
-  color: #333;
-}
 
-/* Texte important */
-.important {
-  color: #0077cc;
-  font-weight: bold;
-}
+body { font-family: 'Open Sans', sans-serif; background-color: #ffffff; color: #333; }
 
-/* Drapeau flottant */
-.floating-flag {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  width: 36px;
-  z-index: 1000;
-}
+/* Texte important */ .important { font-weight: bold; color: #005fa3; }
 
-.floating-flag img {
-  width: 100%;
-  border-radius: 4px;
-}
+/* Drapeau flottant */ .floating-flag { position: absolute; top: 15px; right: 15px; width: 32px; }
 
-/* Section d’intro sans scroll */
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  text-align: center;
-  padding: 20px;
-}
+.floating-flag img { width: 100%; border-radius: 4px; }
 
-.intro h1 {
-  font-size: 2.2em;
-  font-weight: bold;
-  font-style: normal;
-  color: #0077cc;
-  margin-bottom: 30px;
-}
+/* Section d'intro */ .intro { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; text-align: center; padding: 20px; }
 
-/* Bouton CV */
-.cv-button, .cv-link {
-  background-color: #0077cc;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-bottom: 30px;
-  transition: background-color 0.3s;
-}
+.intro h1 { font-size: 2.2em; font-weight: bold; color: #0077cc; margin-bottom: 30px; }
 
-.cv-button:hover, .cv-link:hover {
-  background-color: #005fa3;
-}
+/* Bouton CV et LinkedIn */ .cv-button, .cv-link, .linkedin-button { display: inline-flex; align-items: center; background-color: #0077cc; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.95em; margin-bottom: 30px; transition: background-color 0.3s, transform 0.2s ease-in-out; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); }
 
-/* Ligne info : QR + LinkedIn */
-.info-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
+.cv-button:hover, .cv-link:hover, .linkedin-button:hover { background-color: #005fa3; transform: scale(1.03); }
 
-.linkedin-widget,
-.qr-code {
-  min-width: 260px;
-}
+/* Ligne info QR + LinkedIn */ .info-row { display: flex; flex-wrap: wrap; gap: 30px; align-items: center; justify-content: center; margin-top: 20px; }
 
-/* Section principale */
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px 20px;
-  background-color: #fff;
-}
+.qr-code { width: 140px; height: 140px; }
 
-section {
-  margin-bottom: 40px;
-}
+/* Fallback LinkedIn */ #linkedin-fallback { display: none; justify-content: center; margin-top: 20px; }
 
-h2 {
-  color: #0077cc;
-  margin-top: 40px;
-  margin-bottom: 10px;
-}
+/* Contenu principal */ .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; background-color: #fff; }
 
-ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 20px;
-}
+section { margin-bottom: 40px; }
 
-ul li {
-  margin-bottom: 8px;
-}
+h2 { color: #0077cc; margin-top: 40px; margin-bottom: 10px; }
 
-a {
-  color: #0077cc;
-  text-decoration: none;
-}
+ul { list-style: none; padding-left: 0; margin-bottom: 20px; }
 
-a:hover {
-  text-decoration: underline;
-}
+ul li { margin-bottom: 8px; }
 
-/* Responsive pour mobile */
-@media (max-width: 768px) {
-  .info-row {
-    flex-direction: column;
-    gap: 20px;
-  }
+a { color: #0077cc; text-decoration: none; }
 
-  .intro h1 {
-    font-size: 1.8em;
-  }
+a:hover { text-decoration: underline; }
 
-  .cv-button, .cv-link {
-    font-size: 0.95em;
-  }
+/* Responsive */ @media (max-width: 768px) { .info-row { flex-direction: column; gap: 20px; }
 
-  .qr-code {
-    margin-top: 10px;
-  }
-}
-.double-role {
-  line-height: 1.5;
-  text-align: left;
-}
+.intro h1 { font-size: 1.8em; }
+
+.cv-button, .cv-link, .linkedin-button { font-size: 0.9em; } }
+
+/* Double rôle en 2 lignes alignées à gauche */ .double-role { line-height: 1.5; text-align: left; }
+
