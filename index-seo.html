@@ -92,26 +92,15 @@
   <section class="intro">
     <h1>Curriculum Vitæ Infirmier Jean MOREL</h1>
 
-    <a href="https://jeanmorel974.github.io/Mon_Premier_Site_Web/Images/CV-JeanMorel.pdf" class="cv-button" download>
+    <a href="https://jeanmorel974.github.io/Mon_Premier_Site_Web/Images/CV-JeanMorel.pdf?v=a09543e610e9" class="cv-button" download>
       Télécharger mon CV (PDF)
     </a>
 
     <div class="info-row">
-      <div class="linkedin-widget">
-        <div class="LI-profile-badge"
-             data-locale="fr_FR"
-             data-size="medium"
-             data-theme="light"
-             data-type="horizontal"
-             data-vanity="jean-morel-infirmier-reconversion-emploi-reserve-defense"
-             data-version="v1">
-          <a class="LI-simple-link"
-             href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense"
-             target="_blank">
-            Jean MOREL – LinkedIn
-          </a>
-        </div>
+      <div id="linkedin-container">
+        <a class="linkedin-button" href="https://www.linkedin.com/in/jean-morel-infirmier-de/" target="_blank" rel="noopener noreferrer">Voir mon profil LinkedIn</a>
       </div>
+
 
       <div class="qr-code" id="qrcode"></div>
     </div>
@@ -154,7 +143,7 @@
         <li>Email : <span class="important">jeanmorel@icloud.com</span></li>
         <li>Téléphone : <span class="important">06 93 97 07 84</span></li>
         <li>LinkedIn :
-          <a href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense" target="_blank">
+          <a href="https://www.linkedin.com/in/jean-morel-infirmier-de/" target="_blank">
             Voir mon profil LinkedIn
           </a>
         </li>
@@ -168,7 +157,7 @@
     const qrCode = new QRCodeStyling({
       width: 140,
       height: 140,
-      data: "https://jeanmorel974.github.io/Mon_Premier_Site_Web/Images/CV-JeanMorel.pdf",
+      data: "https://jeanmorel974.github.io/Mon_Premier_Site_Web/Images/CV-JeanMorel.pdf?v=a09543e610e9",
       dotsOptions: {
         color: "#0077cc",
         type: "rounded"
@@ -181,6 +170,6 @@
   </script>
 
   <!-- LinkedIn Badge Script -->
-  <script async type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js"></script>
+  
 </body>
 </html>

@@ -15,35 +15,14 @@
     <img src="https://flagcdn.com/gb.svg" alt="English" />
   </a>  <section class="intro">
     <h1>Curriculum Vitæ Infirmier Jean MOREL</h1>
-    <a href="https://jeanmorel974.github.io/Mon_Premier_Site_Web/Images/CV-JeanMorel.pdf" class="cv-button" download>
+    <a href="https://jeanmorel974.github.io/Mon_Premier_Site_Web/Images/CV-JeanMorel.pdf?v=a09543e610e9" class="cv-button" download>
       Télécharger mon CV (PDF)
     </a>
     <div class="info-row">
       <div id="linkedin-container">
-        <div id="linkedin-badge" class="LI-profile-badge"
-             data-locale="fr_FR"
-             data-size="medium"
-             data-theme="light"
-             data-type="horizontal"
-             data-vanity="jean-morel-infirmier-reconversion-emploi-reserve-defense"
-             data-version="v1">
-          <a class="LI-simple-link"
-             href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense"
-             target="_blank">
-            Jean MOREL – LinkedIn
-          </a>
-        </div>
-        <div id="linkedin-fallback">
-          <a class="linkedin-button"
-             href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense"
-             target="_blank" rel="noopener noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24" style="margin-right: 8px;">
-              <path d="M20.452 20.452h-3.554v-5.569c0-1.328-.025-3.037-1.849-3.037-1.851 0-2.135 1.445-2.135 2.939v5.667H9.361V9h3.414v1.561h.049c.476-.9 1.635-1.849 3.366-1.849 3.598 0 4.263 2.368 4.263 5.448v6.292zM5.337 7.433c-1.144 0-2.07-.928-2.07-2.07s.926-2.07 2.07-2.07 2.07.928 2.07 2.07-.926 2.07-2.07 2.07zm1.777 13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.206 24 24 23.226 24 22.271V1.729C24 .774 23.206 0 22.225 0z"/>
-            </svg>
-            Voir mon profil LinkedIn
-          </a>
-        </div>
+        <a class="linkedin-button" href="https://www.linkedin.com/in/jean-morel-infirmier-de/" target="_blank" rel="noopener noreferrer">Voir mon profil LinkedIn</a>
       </div>
+
       <div class="qr-code" id="qrcode"></div>
     </div>
   </section>  <div class="container">
@@ -85,7 +64,7 @@
     <li>Téléphone : <span class="important">Réunion : 06 93 97 07 84</span></li>
     <li><span class="important">Métropole +262 693 97 07 84</span></li>
     <li>LinkedIn :
-      <a href="https://www.linkedin.com/in/jean-morel-infirmier-reconversion-emploi-reserve-defense" target="_blank">
+      <a href="https://www.linkedin.com/in/jean-morel-infirmier-de/" target="_blank">
         Voir mon profil LinkedIn
       </a>
     </li>
@@ -96,7 +75,7 @@
     const qrCode = new QRCodeStyling({
       width: 140,
       height: 140,
-      data: "https://jeanmorel974.github.io/Mon_Premier_Site_Web/Images/CV-JeanMorel.pdf",
+      data: "https://jeanmorel974.github.io/Mon_Premier_Site_Web/Images/CV-JeanMorel.pdf?v=a09543e610e9",
       dotsOptions: {
         color: "#0077cc",
         type: "rounded"
@@ -106,14 +85,5 @@
       }
     });
     qrCode.append(document.getElementById("qrcode"));
-  </script>  <script>
-    setTimeout(function () {
-      const badge = document.querySelector('#linkedin-badge');
-      const fallback = document.querySelector('#linkedin-fallback');
-      if (badge && badge.offsetHeight < 100) {
-        badge.style.display = 'none';
-        fallback.style.display = 'flex';
-      }
-    }, 3000);
-  </script>  <script async type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js"></script></body>
+  </script>    </body>
 </html>
